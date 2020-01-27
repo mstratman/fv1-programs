@@ -1,3 +1,105 @@
-# FV-1 programs
+# FV-1 Program Directory
 
-Coming soon
+View the directory here: [https://mstratman.github.io/fv1-programs/](https://mstratman.github.io/fv1-programs/)
+
+## Overview
+
+This repository contains a collection of programs (or patches) for the
+[Spin Semiconductor FV-1 IC](http://spinsemi.com/products.html). The goal is to be an open, community-driven
+resource containing the most comprehensive list programs for DIY guitar pedal builders. 
+
+## Background
+
+The FV-1 is an incredible IC (integrated circuit) with a DSP (digital signal processing) core that is used at the heart of many popular guitar pedals for effects such as reverb, delay, chorus, and more. It is used by hobbyists and pedal manufacturers alike.  It's also used in mixers, amplifiers, karaoke machines, and more.
+
+Until now, finding programs to use or study meant either relying on the precious few that Spin provides, or scrounging through hundreds of threads in discussion forums, and various other disparate sources, all the while trying to determine if they even work. I hope this project helps other guitar pedal builders find the tones they're looking for, and inspiration to create even more great programs.
+
+## Contributing
+
+The simplest way to help out is to send an [email to the maintainer](stratman@gmail.com) of this
+repository with any additional programs you'd like to add, or with commentary, corrections, or other information to add to the page.
+
+This is an open source project, so you are welcome and encouraged to dive deeper as well.  Clone this repository and follow the "Build Setup" below and you can have your own working copy of the site to tinker around with.
+
+I also welcome and encourage pull requests of any kind, but particularly to the `programs.js` file which contains the list of all FV-1 programs on the site.
+
+## programs.js File Format
+
+The `programs.js` file contains the list of all FV-1 programs, and is
+structured as follows:
+
+```json
+export default [
+  {
+    "name": "Flange Verb", // Required
+    "description": "A Hall reverb, with a bit of flanger. Based on the internal ROM program, with a few tweaks.",
+    "author": null,
+    "author_url": null,
+    "categories": ["Flanger", "Reverb"], // Required, at least 1
+    "download": { // Required
+      "spinasm": {
+        // Either file or url. You don't need both.
+        "file": "temp.spn",
+        "url": null
+      }
+      // Eventually, if needed, we may also add "hex" and/or "bank" files here.
+    },
+    "source_url": null,
+    "special_pcb": false,
+    "schematic_file": null,
+    "commentary": [
+      {
+        "written_by": "Mark S",
+        "comments": { text: "This doesn't work well with guitar" }
+      }
+    ]
+  }
+]
+```
+
+* **name**: *required* The name of the program
+* **description**: A one-line description of the program
+* **author**: The name of the author
+* **author_url**: e.g. "mailto:foo@example.com" or "https://example.com"
+* **categories**: *required* An array of effect types. This can be anything, but try to re-use others that already exist in the file (e.g. don't have "vibe" and "vibrato" if you don't really need to)
+* **download**: An object
+  * **spinasm** - the only type right now. Eventually we may allow bank or hex files
+    * **file** is preferred, and is the filename (e.g. "somefile.spn") of the program as it exists in the `files` directory of this respository
+    * **url** should be avoided if possible, but exists in case somebody wants to distribute their program but doesn't want to freely distribute its source on this site. The UI should eventually allow viewers to filter these out easily.
+* **source_url**: Where did it come from? e.g. a forum thread URL
+* **special_pcb**: Boolean. Default false. If `false` we assume the program will work with the "Typical Application" circuit in the [FV-1 datasheet](http://www.spinsemi.com/Products/datasheets/spn1001/FV-1.pdf).
+* **schematic_file**: If this requires a custom PCB, the schematic should be included in the `files` directory and its filename used here.
+* **commentary**: An array of objects with "written_by" and "comments" keys.  This allows anyone to interject their experiences, recommendations, or other thoughts into the site.
+  * **written_by** The name of the person who said this
+  * **comments** Object with either "text" or "html"
+    * **text** A string with the comments they want to share.
+    * **html** Raw HTML, e.g. if you need to include links. Be careful with this.
+
+## Directory structure
+
+Or rather, here are the notable files you're most likely to be looking for:
+
+* **programs.js** - the most important file, see the description of it above
+* **files/** - this directory contains all the downloadable .spn files referenced from the `entry.download.file` field in the `programs.js`
+* **pages/index.vue** - the main page
+* **layouts/default.vue** - the wrapper template for the site
+* *everything else* for the most part is [Nuxt.js](https://nuxtjs.org/) boilerplate
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm run install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
