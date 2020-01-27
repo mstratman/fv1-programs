@@ -28,7 +28,7 @@ I also welcome and encourage pull requests of any kind, but particularly to the 
 The `programs.js` file contains the list of all FV-1 programs, and is
 structured as follows:
 
-```json
+```js
 export default [
   {
     "name": "Flange Verb", // Required
@@ -50,7 +50,7 @@ export default [
     "commentary": [
       {
         "written_by": "Mark S",
-        "comments": { text: "This doesn't work well with guitar" }
+        "comments": { "text": "This doesn't work well with guitar" }
       }
     ]
   }
