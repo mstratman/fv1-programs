@@ -91,9 +91,6 @@ Or rather, here are the notable files you're most likely to be looking for:
 
 ## Build Setup
 
-You'll probably want to comment out the `router.base` option in `nuxt.config.js`
-for running locally.
-
 ``` bash
 # install dependencies
 $ npm run install
