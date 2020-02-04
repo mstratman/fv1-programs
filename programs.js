@@ -1219,4 +1219,235 @@ export default [
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=490",
   },
+  {
+    name: "Cabinet simulator",
+    author: "Digital Larry",
+    categories: ["Cabinet simulator"],
+    download: {
+      spcd: {
+        file: "holy-city-audio/cabinet-simulator.spcd",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Chorus: Bank of demo patches",
+    author: "Digital Larry",
+    categories: ["Chorus"],
+    download: {
+      spbk: {
+        file: "holy-city-audio/chorus-demo-bank-2018.spbk",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+    commentary: [
+      {
+        written_by: "Digital Larry",
+        comments: { text: `I've recreated some patches quickly showing what I think I was trying to demonstrate.
+Check "patch information" for each patch to see my notes on these. Patches 1-4 represent my quick dialing up of several chorus sounds which are pleasing to me.
+
+The Power block can be placed after a Pot control to change its curve or "taper". Using increasing powers causes the controlled effect to come in "later" in the pot's rotation. Use increasing powers with "invert" and "flip" both set in the control panel to make the effect come in "sooner". Even when you are using a single control, you can process it differently for each destination if that's what you want. This allows you to fine-tune the sonic blend all along the rotation of the control pot.
+
+Open up the control panels and adjust the sounds to your own tastes. Thousands of subtle and not- so-subtle variations are possible.
+
+There is a tradeoff required between LFO width and LFO speed unless you are looking for sci-fi sounds. Many of the patches use a single control which turns the speed up while turning the width down to achieve a wide range of acceptable chorus sounds with a single control. This is less flexible than using separate controls, but it's entirely up to you.
+In addition, the longer the chorus delay time, the less width you need to achieve a given level of detuning.`
+        }
+      }
+    ],
+  },
+  {
+    name: "Delay with threshold",
+    author: "Digital Larry",
+    categories: ["Delay"],
+    download: {
+      spcd: {
+        file: "holy-city-audio/delay-with-threshold.spcd",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Delay: Bank of demo patches",
+    author: "Digital Larry",
+    categories: ["Delay"],
+    download: {
+      spbk: {
+        file: "holy-city-audio/demo-delays.spbk",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Filter tremolo",
+    description: "We have both filter tremolo and volume modulation with LFO 90 degrees phase shifted.  This is similar to harmonic tremolo as found in some vintage tube amps.",
+    author: "Digital Larry",
+    categories: ["Tremolo"],
+    download: {
+      spcd: {
+        file: "holy-city-audio/filter-tremolo-example.spcd",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+    commentary: [
+      {
+        written_by: "Digital Larry",
+        comments: { text: `One of the coolest things you can do with the fixed SVP block is to make a "tremolo" type sound using the crossfade block. The concept is tremolo but it sounds a lot like a flanger at times. Adjust the filter frequency and resonance to taste. I think you'll want to keep the resonance below 6 most of the time.
+
+I love this one! Many variations possible.`},
+      },
+      {
+        written_by: "Digital Larry",
+        comments: { text: `Here's another variation on the filter tremolo. We have both filter tremolo and volume modulation with LFO 90 degrees phase shifted.
+
+This is similar to harmonic tremolo as found in some vintage tube amps. Harmonic tremolos may use separate filters for the high and low sections, whereas this implementation uses the high and low outputs of a single state variable filter. You could of course add a second filter so that the corner frequencies could be controlled independently. Also I'm pretty sure that harmonic tremolo varies the high and low amplitude 180 degrees out of phase with each other. This may be a better sound than having them 90 degrees apart. Nice thing is that you can experiment with all sorts of different ways of doing it.` }
+      },
+    ]
+  },
+  {
+    name: "Flangers: Bank of patches",
+    author: "Digital Larry",
+    categories: ["Flanger"],
+    download: {
+      spbk: {
+        file: "holy-city-audio/flangers.spbk",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Multi tap delays: Bank of patches",
+    author: "Digital Larry",
+    categories: ["Delay"],
+    download: {
+      spbk: {
+        file: "holy-city-audio/multi-tap-delays.spbk",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "New Flanger",
+    author: "Digital Larry",
+    description: "Flanger using rectified-sine modulation.  LFO frequency and width are in inverse relationship from the pot to give good results over a wide frequency range with one knob.",
+    categories: ["Flanger"],
+    download: {
+      spn: {
+        file: "holy-city-audio/new-flanger.spn",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Oil can delay",
+    author: "Digital Larry",
+    description: "Flanger using rectified-sine modulation.  LFO frequency and width are in inverse relationship from the pot to give good results over a wide frequency range with one knob.",
+    categories: ["Delay"],
+    download: {
+      spn: {
+        file: "holy-city-audio/oil-can-delay.spn",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+    commentary: [
+      {
+        written_by: "Digital Larry",
+        comments: { text: `Here's the idea of an oil-can delay. It uses a drum which is insulating but has a conductive outer surface. It runs through a reservoir of oil and a brush contact connected to a voltage amplifier from the input writes electrons onto the surface which are picked up by another brush on the other side of the drum. So the delay time is related to the angular displacement of the brushes and the RPM. For example if the brushes are 180 degrees apart, and it's going 60 RPM (1 rev/second) then that is a 500 msec delay. t (seconds) = (angle/360) * 60/RPM = angle / (6 * RPM). Faster the RPM, the shorter the delay.
+
+Next there is a wobble (LFO chorus) due to the drum being off center. The rate of this corresponds to the RPM or revs per second. Faster the RPM, the faster the chorus LFO.
+
+So we need an inverse relationship between chorus rate and delay time from one pot which controls the delay time setting. This you can see from the inverted scale going to the chorus block lfo rate input from pot1 which also goes through a smoother. The net effect of changing the scale/offset blocks (or the delay max time, or the chorus LFO max rate) is to change the angular displacement of the read and write brushes. If the specifics are important, figure it out but you can get different sounds by changing these ratios. Interestingly, the "size" of the drum makes no difference.
+
+I used the multi-tap delay block because supposedly some oil can delays had two heads, but I'm not sure.
+
+Pot0 = delay time/lfo rate (limited range setting, try making it longer if you like)
+Pot1 = chorus width
+Pot2 = feedback` }
+      },
+    ],
+  },
+  {
+    name: "Percussion Ambience",
+    author: "Digital Larry",
+    description: "Try this on some percussive material.",
+    categories: ["Code snippet"],
+    download: {
+      spn: {
+        file: "holy-city-audio/percussion-ambience.spn",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Room reverb: 3-4-5",
+    author: "Digital Larry",
+    description: "This one uses 3 delay lines with relative lengths in a ratio of 3 - 4 - 5",
+    categories: ["Reverb"],
+    download: {
+      spn: {
+        file: "holy-city-audio/room-reverb-3-4-5.spn",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+    commentary: [
+      {
+        written_by: "Digital Larry",
+        comments: { text: "This one uses 3 delay lines with relative lengths in a ratio of 3 - 4 - 5 which I just learned is considered a good ratio for such things. No all pass filters or anything fancy. Adjustable low pass filters in each delay line feedback. Doesn't sound bad for something so simple!" }
+      }
+    ],
+  },
+  {
+    name: "Spacedash",
+    author: "Digital Larry",
+    categories: ["Uncategorized"],
+    download: {
+      spcd: {
+        file: "holy-city-audio/spacedash.spcd",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Shimmer",
+    author: "Digital Larry",
+    categories: ["Reverb"],
+    download: {
+      spcd: {
+        file: "holy-city-audio/shimmer.spcd",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Through zero flangers",
+    author: "Digital Larry",
+    categories: ["Flanger"],
+    download: {
+      spbk: {
+        file: "holy-city-audio/through-zero-flangers-demo.spbk",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+    commentary: [
+      {
+        written_by: "Digital Larry",
+        comments: { text: `I finally figured out that much of the magic requires one of the delay lines to be inverted so that they fully cancel when they line up.
+
+I'm sure there's more that could be done here. Play with the LFO width (shorter seems better), the servo gain, tap ratio, and LFO speed (slower seems better for bringing out the drama of the TZF).` },
+      }
+    ],
+  },
+  {
+    name: "Square wave Tremolo, Aliaser, Reverb",
+    author: "Digital Larry",
+    categories: ["Reverb", "Tremolo"],
+    description: "Square Wave Tremolo with envelope controlled aliaser and reverb. Because why not?",
+    download: {
+      spn: {
+        file: "holy-city-audio/tremolo-aliaser-reverb.spn",
+      }
+    },
+    source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+
 ]

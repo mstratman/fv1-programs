@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <div :id="`more-${i_p}`" style="display:none">
+        <div :id="`more-${i_p}`" class="more" style="display:none">
           <div class="row">
             <div class="one column d-none-mobile">&nbsp;</div>
             <div class="eleven columns">
@@ -435,19 +435,24 @@ export default {
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
-    .source {
-      a { font-size: 1rem; }
-    }
-    .commentary {
-      .comment {
+    .more {
+      .source {
+        a { font-size: 1rem; }
+      }
+      .commentary {
+        .comment {
+          font-size: 1rem;
+        }
+        .no-comments {
+          font-style: italic;
+        }
+        .commentary-text {
+          white-space: pre-wrap;
+          margin-left: 2rem;
+        }
+      }
+      .contribute {
         font-size: 1rem;
-      }
-      .no-comments {
-        font-style: italic;
-      }
-      .commentary-text {
-        white-space: pre-wrap;
-        margin-left: 2rem;
       }
     }
   }
