@@ -1,0 +1,25 @@
+{
+  "name": "fv1-programs",
+  "version": "1.0.0",
+  "description": "Collection of FV-1 programs",
+  "author": "Mark A. Stratman",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "nuxt-element-ui": "^1.0.10",
+    "vue-multiselect": "^2.1.6",
+    "vue-sweetalert2": "^3.0.1",
+    "vue-toasted": "^1.1.27"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "sass-mq": "^5.0.1"
+  }
+}

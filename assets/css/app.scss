@@ -1,0 +1,136 @@
+$mq-responsive: true;
+$mq-breakpoints: (
+    mobile:  400px,
+    largemobile: 550px,
+    tablet:  720px,
+    desktop: 980px,
+    wide:    1300px,
+);
+$mq-static-breakpoint: desktop;
+$mq-show-breakpoints: (mobile, largemobile, tablet, desktop, wide);
+@import '~sass-mq';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700&display=swap');
+
+html {
+  font-family: "Poppins", sans-serif;
+
+  background: url(../../static/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 { font-size: 3.0rem; }
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2.0rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1.0rem; }
+@media (min-width: 550px) {
+  h1 { font-size: 4.0rem; }
+  h2 { font-size: 3.2rem; }
+  h3 { font-size: 2.6rem; }
+  h4 { font-size: 2.0rem; }
+  h5 { font-size: 1.4rem; }
+  h6 { font-size: 1.0rem; }
+}
+
+p { font-weight: 300; }
+
+body {
+  margin: 0;
+}
+
+button:disabled, button:disabled:hover,
+button[disabled], button[disabled]:hover {
+  color: #bfbfbf;
+}
+
+.text-center { text-align: center; }
+
+.header > .logo {
+  padding: 0;
+  @include mq($until: tablet) {
+    margin: 2rem 0 4rem 0;
+  }
+  @include mq($from: tablet) {
+    margin: 1rem 0 2rem 0;
+  }
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.header > .subtitle {
+  font-weight: 300;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.page-container {
+  max-width: 980px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include mq($until: largemobile) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  @include mq($from: largemobile, $until: tablet) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include mq($from: tablet) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.d-block-mobile {
+  @include mq($until: largemobile) {
+    display: block;
+  }
+  @include mq($from: largemobile) {
+    display: none;
+  }
+}
+.d-none-mobile {
+  @include mq($until: largemobile) {
+    display: none;
+  }
+  @include mq($from: largemobile) {
+    display: block;
+  }
+}
+
+/*
+.narrower {
+  @include mq($from: largemobile) {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
+*/
+
+.section, .section-no-bg {
+  padding: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.section {
+  background: rgba(255,255,255, 0.97);
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+}

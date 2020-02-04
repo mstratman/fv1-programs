@@ -37,9 +37,9 @@ export default [
     "author_url": null,
     "categories": ["Flanger", "Reverb"], // Required, at least 1
     "download": { // Required
-      "spinasm": {
+      "spn": { // or "spbk" or "spcd"
         // Either file or url. You don't need both.
-        "file": "temp.spn",
+        "file": "flange_verb.spn",
         "url": null
       }
       // Eventually, if needed, we may also add "hex" and/or "bank" files here.
@@ -52,27 +52,30 @@ export default [
         "written_by": "Mark S",
         "comments": { "text": "This doesn't work well with guitar" }
       }
-    ]
+    ],
+    "application": "mixer", // We assume it's a guitar pedal, unless this is set to something else
   }
 ]
 ```
 
-* **name**: *required* The name of the program
+* **name**: *required*. The name of the program
 * **description**: A one-line description of the program
 * **author**: The name of the author
 * **author_url**: e.g. "mailto:foo@example.com" or "https://example.com"
-* **categories**: *required* An array of effect types. This can be anything, but try to re-use others that already exist in the file (e.g. don't have "vibe" and "vibrato" if you don't really need to)
-* **download**: An object
-  * **spinasm** - the only type right now. Eventually we may allow bank or hex files
+* **categories**: *required*. An array of effect types. This can be anything, but try to re-use others that already exist in the file (e.g. don't have "vibe" and "vibrato" if you don't really need to)
+* **download**: *required*. An object containing one or more of these:
+  * **spn** - SpinASM text assembly file
     * **file** is preferred, and is the filename (e.g. "somefile.spn") of the program as it exists in the `files` directory of this respository
     * **url** should be avoided if possible, but exists in case somebody wants to distribute their program but doesn't want to freely distribute its source on this site. The UI should eventually allow viewers to filter these out easily.
+  * **spbk** - SpinCAD bank. Also has `file` or `url`. If possible, export a `.spn` SpinASM file and include that as well.
+  * **spcd** - SpinCAD file. Also has `file` or `url`. If possible, export a `.spn` SpinASM file and include that as well.
 * **source_url**: Where did it come from? e.g. a forum thread URL
 * **special_pcb**: Boolean. Default false. If `false` we assume the program will work with the "Typical Application" circuit in the [FV-1 datasheet](http://www.spinsemi.com/Products/datasheets/spn1001/FV-1.pdf).
-* **schematic_file**: If this requires a custom PCB, the schematic should be included in the `files` directory and its filename used here.
+* **schematic_file**: If this requires a custom PCB, the schematic should be included in the `files` directory and its filename used here (if possible).
 * **commentary**: An array of objects with "written_by" and "comments" keys.  This allows anyone to interject their experiences, recommendations, or other thoughts into the site.
   * **written_by** The name of the person who said this
   * **comments** Object with either "text" or "html"
-    * **text** A string with the comments they want to share.
+    * **text** A string with the comments they want to share. You can use backticks (ES6 template literal) to quote this, to make it easier to paste multi-line comments.
     * **html** Raw HTML, e.g. if you need to include links. Be careful with this.
 
 ## Directory structure
@@ -80,12 +83,16 @@ export default [
 Or rather, here are the notable files you're most likely to be looking for:
 
 * **programs.js** - the most important file, see the description of it above
-* **files/** - this directory contains all the downloadable .spn files referenced from the `entry.download.file` field in the `programs.js`
+* **static/files/** - this directory contains all the downloadable .spn files referenced from the `entry.download.file` field in the `programs.js`
 * **pages/index.vue** - the main page
-* **layouts/default.vue** - the wrapper template for the site
+* **app.html** - global site template
+* **assets/css/app.scss** - global styles, useful on any page
 * *everything else* for the most part is [Nuxt.js](https://nuxtjs.org/) boilerplate
 
 ## Build Setup
+
+You'll probably want to comment out the `router.base` option in `nuxt.config.js`
+for running locally.
 
 ``` bash
 # install dependencies
