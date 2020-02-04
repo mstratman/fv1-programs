@@ -126,6 +126,10 @@
           <div class="row">
             <div class="one column d-none-mobile">&nbsp;</div>
             <div class="eleven columns">
+              <div v-if="p.source_url" class="source more-section">
+                <strong>Sourced from:</strong>
+                <a target="_blank" :href="p.source_url">{{p.source_url}}</a>
+              </div>
               <div class="application more-section">
                 <strong>Application: </strong>
                 {{p.application || "Guitar"}}
@@ -430,6 +434,9 @@ export default {
     .more-section {
       margin-top: 1rem;
       margin-bottom: 2rem;
+    }
+    .source {
+      a { font-size: 1rem; }
     }
     .commentary {
       .comment {
