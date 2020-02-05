@@ -42,7 +42,6 @@ export default [
         "file": "flange_verb.spn",
         "url": null
       }
-      // Eventually, if needed, we may also add "hex" and/or "bank" files here.
     },
     "source_url": null,
     "special_pcb": false,
