@@ -110,7 +110,7 @@
             &nbsp;
           </div>
           <div class="six columns">
-            <small><em>{{p.description}}&nbsp;</em></small>
+            <div class="description">{{p.description}}&nbsp;</div>
             <div v-if="p.special_pcb" class="special-pcb">
               * Requires different circuit
               <a v-if="p.schematic_file" target="_blank" :href="`files/${p.schematic_file}`">(download)</a>
@@ -426,7 +426,10 @@ export default {
     }
 
     .author {
-      font-size: 1rem;
+    }
+
+    .description {
+      font-style: italic;
     }
 
     .special-pcb {
