@@ -1071,7 +1071,7 @@ export default [
   {
     name: "Hall Reverb w/ Shimmer",
     author: "Sweetalk",
-    categories: ["Reverb"],
+    categories: ["Reverb", "Shimmer"],
     download: {
       spn: {
         file: "shimmer-1.spn"
@@ -1080,7 +1080,7 @@ export default [
   },
   {
     name: "New Shimmer Reverb",
-    categories: ["Reverb"],
+    categories: ["Reverb", "Shimmer"],
     download: {
       spn: {
         file: "shimmer-2.spn"
@@ -1221,7 +1221,7 @@ export default [
   },
   {
     name: "Cabinet simulator",
-    author: "Digital Larry",
+    author: "jovesdies",
     categories: ["Cabinet simulator"],
     download: {
       spcd: {
@@ -1398,11 +1398,12 @@ Pot2 = feedback` }
   },
   {
     name: "Spacedash",
-    author: "Digital Larry",
+    author: "madbeanpedals",
+    author_url: "https://madbeanpedals.com/",
     categories: ["Uncategorized"],
     download: {
       spcd: {
-        file: "holy-city-audio/spacedash.spcd",
+        file: "madbeanpedals/spacedash.spcd",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
@@ -1410,7 +1411,7 @@ Pot2 = feedback` }
   {
     name: "Shimmer",
     author: "Digital Larry",
-    categories: ["Reverb"],
+    categories: ["Reverb", "Shimmer"],
     download: {
       spcd: {
         file: "holy-city-audio/shimmer.spcd",
@@ -1448,6 +1449,42 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+  },
+  {
+    name: "Starfield",
+    author: "madbeanpedals",
+    author_url: "https://madbeanpedals.com/",
+    description: "This is a delay that allows you to mix in a phaser with the delays",
+    categories: ["Delay", "Phaser"],
+    download: {
+      spcd: {
+        file: "madbeanpedals/starfield.spcd",
+      }
+    },
+  },
+  {
+    name: "Choir Saw",
+    author: "madbeanpedals",
+    author_url: "https://madbeanpedals.com/",
+    description: "A delay with pitch shift in the feedback path. Kind of a discount EQD Rainbow Machine",
+    categories: ["Delay", "Pitch"],
+    download: {
+      spcd: {
+        file: "madbeanpedals/choir-saw.spcd",
+      }
+    },
+  },
+  {
+    name: "Parallax",
+    author: "madbeanpedals",
+    author_url: "https://madbeanpedals.com/",
+    description: "Emulates the Function F(x) Parallax pedal. It's a tremolo with a phase shifter and speed controls for each",
+    categories: ["Tremolo", "Phaser"],
+    download: {
+      spcd: {
+        file: "madbeanpedals/parallax.spcd",
+      }
+    },
   },
 
 ]
