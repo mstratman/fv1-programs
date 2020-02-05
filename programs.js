@@ -1486,5 +1486,16 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
       }
     },
   },
+  {
+    name: "Spring Reverb + Tremolo",
+    author: "Don Stavely",
+    description: "Spring reverbs sound 'boingy' because of dispersion in the spring - higher frequencies travel slower than low frequencies. A 'spectral delay filter', consisting of many (100's) of unit allpasses will produce the desired 'chirp' impulse response...",
+    categories: ["Tremolo", "Reverb"],
+    download: {
+      spn: {
+        file: "spring_verb.spn",
+      }
+    },
+  },
 
 ]
