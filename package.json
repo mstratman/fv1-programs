@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "nuxt-element-ui": "^1.0.10",
     "vue-multiselect": "^2.1.6",
     "vue-sweetalert2": "^3.0.1",
     "vue-toasted": "^1.1.27"
