@@ -9,7 +9,7 @@
 
     <div class="section intro">
       <h2>Introduction</h2>
-      <p>The goal of this project is to be a comprehensive directory of patches, programs, or banks for the <a href="http://spinsemi.com/products.html" target="_blank">Spin Semiconductor FV-1 DSP integrated circuit (IC)</a> that can be used in DIY guitar effects pedals, and other hobbiest projects. It is community-driven and built entirely from contributions of people like you, so please submit any programs you'd like to share.</p>
+      <p>The goal of this project is to be a comprehensive directory of patches, programs, or banks for the <a href="http://spinsemi.com/products.html" target="_blank">Spin Semiconductor FV-1 DSP integrated circuit (IC)</a> that can be used in DIY guitar effects pedals, and other hobbiest projects. It is community-driven and built entirely of contributions from people like you, so please submit any programs you'd like to share.</p>
       <p>This entire site is open source and <a target="_blank" href="https://github.com/mstratman/fv1-programs">hosted on GitHub</a></p>
       <div class="center-buttons">
         <button class="button-primary" @click="showContributeDialog()">Contribute Updates</button>
