@@ -7,7 +7,9 @@ $mq-breakpoints: (
     wide:    1300px,
 );
 $mq-static-breakpoint: desktop;
-$mq-show-breakpoints: (mobile, largemobile, tablet, desktop, wide);
+/*
+ $mq-show-breakpoints: (mobile, largemobile, tablet, desktop, wide);
+ */
 @import '~sass-mq';
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700&display=swap');
