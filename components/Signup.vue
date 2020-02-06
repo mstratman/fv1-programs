@@ -4,9 +4,6 @@
       <div class="ml-form-align-center">
         <div class="ml-form-embedWrapper embedForm">
           <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-            <div class="ml-form-embedContent" style="">
-              <h4>I want one!</h4>
-            </div>
             <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/n7b2e7" data-code="n7b2e7" method="post" target="_blank">
               <div class="ml-form-formContent">
                 <div class="ml-form-fieldRow">
