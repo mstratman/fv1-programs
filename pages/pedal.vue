@@ -36,7 +36,7 @@
         If you buy one you get a pedal similar to what you see above, with:
       </p>
       <ul>
-        <li><strong>Choose your intitial 16 programs</strong>.  I can also recommend some of the best ones if you'd like</li>
+        <li><strong>Choose your intitial 16 programs</strong>, <a target="_blank" href="https://mstratman.github.io/fv1-programs/">from this list</a>, or wherever.  I can also recommend some of the best ones if you'd like</li>
         <li><strong>Customize the graphics</strong> with your name, your band's name, favorite quote, a name for the pedal, etc</li>
         <li>Very low cost <strong>EEPROMs with new programs</strong>, for as long as I'm building pedals (probably forever). Just tell me what you'd like and I'll program it and send it to you. If you buy EEPROMs from <a target="_blank" href="https://www.pedalpcb.com/product/eeprombuilder/">PedalPCB's EEPROM builder</a>, or elsewhere, I can also provide the "sister" EEPROM with the program and control labels.</li>
         <li><strong>Free fixes</strong> for as long as I'm building pedals (you pay shipping).</li>
