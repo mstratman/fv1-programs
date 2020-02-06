@@ -3,7 +3,7 @@ let isDev = process.env.NODE_ENV !== 'production'
 export default {
   mode: 'universal',
   generate: {
-    dir: 'docs'
+    dir: 'docs',
   },
   /*
   ** Headers of the page
@@ -50,6 +50,9 @@ export default {
   ** Build configuration
   */
   build: {
+    html: {
+      minify: { removeRedundantAttributes: false },
+    },
     /*
     ** You can extend webpack config here
     */
