@@ -8,7 +8,7 @@
     <div class="section">
       <div class="row">
         <div class="four columns">
-          <h2>Your "desert island" pedal</h2>
+          <h2>Your "deserted island" pedal</h2>
           <h4>Loaded with your ideal tones</h4>
           <div>
             <a href="images/pedal-platform/fv1-2.jpg" target="_blank">
