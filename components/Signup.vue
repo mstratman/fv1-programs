@@ -60,7 +60,7 @@
 
       tag = document.createElement('script')
       // This is fragile. Oh well.
-      tag.setAttribute('src',"../scripts/mailerlite.js")
+      tag.setAttribute('src',"/fv1-programs/scripts/mailerlite.js")
       document.head.appendChild(tag)
     }
   }
