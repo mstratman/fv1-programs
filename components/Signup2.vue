@@ -13,7 +13,7 @@
       <div>
         <label for="field-custom">Customizations?</label>
         <div><small>Interested in a custom label, name, quote etc written on it? Or different art?</small></div>
-        <input id="field-price" type="text" class="form-control u-full-width" data-inputmask="" name="customizations" placeholder="" autocomplete="">
+        <input id="field-custom" type="text" class="form-control u-full-width" data-inputmask="" name="customizations" placeholder="" autocomplete="">
       </div>
       <div>
         <button type="submit" class="primary button-primary">Sign up</button>
