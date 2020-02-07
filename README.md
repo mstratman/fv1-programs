@@ -31,28 +31,31 @@ structured as follows:
 ```js
 export default [
   {
-    "name": "Flange Verb", // Required
-    "description": "A Hall reverb, with a bit of flanger. Based on the internal ROM program, with a few tweaks.",
-    "author": null,
-    "author_url": null,
-    "categories": ["Flanger", "Reverb"], // Required, at least 1
-    "download": { // Required
-      "spn": { // or "spbk" or "spcd"
+    name: "Flange Verb", // Required
+    description: "A Hall reverb, with a bit of flanger. Based on the internal ROM program, with a few tweaks.",
+    author: "Blah Blah",
+    author_url: "mailto:blah@example.com", // Or a regular web link
+    categories: ["Flanger", "Reverb"], // Required, at least 1
+    download: { // Required
+      spn: { // or "spbk" or "spcd"
         // Either file or url. You don't need both.
-        "file": "flange_verb.spn",
-        "url": null
+        file: "flange_verb.spn",
       }
     },
-    "source_url": null,
-    "special_pcb": false,
-    "schematic_file": null,
-    "commentary": [
+    source_url: "https://example.com/thread1", // Where did you find this, particularly if there is discussion about it
+    special_pcb: false,
+    schematic_file: "schematic_abc.png",
+    // Optional. Commentary lets us add longer descriptions than the "description" field,
+    // and allows others to submit comments about patches, as time goes on.
+    commentary: [
       {
-        "written_by": "Mark S",
-        "comments": { "text": "This doesn't work well with guitar" }
-      }
+        written_by: "Mark S",
+        comments: { text: "This doesn't work well with guitar" }
+      },
+      { written_by: "Somebody else", comments: { text: "This is the funkiest Flanger ever" } },
     ],
-    "application": "mixer", // We assume it's a guitar pedal, unless this is set to something else
+    // You'll generaally omit this. We assume it's a guitar pedal, unless this is set to something else
+    application: "mixer",
   }
 ]
 ```
