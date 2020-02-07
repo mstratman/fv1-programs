@@ -28,7 +28,7 @@
       <h2>List of FV-1 Programs</h2>
 
       <div v-show="! show_filters" class="text-center">
-        <small><a href="#" @click.prevent="show_filters = true">[show filters]</a></small>
+        <small><a class="button" href="#" @click.prevent="show_filters = true">show filters</a></small>
       </div>
       <a id="filters"></a>
       <div v-show="show_filters" class="filters">
@@ -140,8 +140,8 @@
                 <strong>Comments:</strong>
                 <span class="no-comments" v-if="p.commentary == undefined || p.commentary.length == 0">none yet</span>
                 <div v-for="c in p.commentary" class="comment">
-                  <div>author: {{c.written_by}}</div>
-                  <div class="commentary-text">{{c.comments.text}}</div>
+                  <div><span class="comment-author">{{c.written_by}}</span> says</div>
+                  <div class="commentary-text">{{c.comments.text}}<span v-if="c.comments.html" v-html="c.comments.html"></span></div>
                 </div>
               </div>
               <div class="contribute more-section">
@@ -420,7 +420,7 @@ export default {
     }
 
     .tag {
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-right: 0.8rem;
       display: block;
     }
@@ -449,14 +449,23 @@ export default {
     }
     .more {
       .source {
-        a { font-size: 1rem; }
+        a { font-size: 1.2rem; }
       }
       .commentary {
         .comment {
-          font-size: 1rem;
+          margin-left: 3rem;
+          margin-bottom: 1rem;
+          border-left: 3px solid #E1E1E1;
+          font-size: 1.3rem;
+          padding-left: 2rem;
+        }
+        .comment-author {
+          font-weight: bold;
+          font-style: italic;
         }
         .no-comments {
           font-style: italic;
+          font-size: 1rem;
         }
         .commentary-text {
           white-space: pre-wrap;
