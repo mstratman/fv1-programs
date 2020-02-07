@@ -1371,7 +1371,7 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
   {
     name: "Square wave Tremolo, Aliaser, Reverb",
     author: "Digital Larry",
-    categories: ["Reverb", "Tremolo"],
+    categories: ["Reverb", "Tremolo","Aliaser"],
     description: "Square Wave Tremolo with envelope controlled aliaser and reverb. Because why not?",
     download: {
       spn: {
@@ -1566,4 +1566,199 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
       }
     ],
   },
+
+  {
+    name: "8 second delay",
+    description: "This delays an input by eight seconds. It inteleaves the signal 8 ways in a single max sized delay",
+    author: "sebxx4",
+    categories: ["Delay", "Code snippet"],
+    download: {
+      spn: { file: "8_seconds_delay.spn" }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?t=418",
+    application: "Code snippet",
+  },
+  {
+    name: "Reverse delay",
+    description: "Simplified part of A+ Paradox delay",
+    author: "igore pie",
+    author_url: "mailto:igor@shift-line.com",
+    categories: ["Delay"],
+    download: {
+      spn: { file: "afx_reverse_delay.spn" }
+    },
+    source_url: "https://github.com/igorpie/Spin-FV-1/blob/master/afx_reverse_delay.spn",
+  },
+  {
+    name: "Aliaser",
+    author: "Frank Thomson, OCT Distribution",
+    categories: ["Aliaser"],
+    download: {
+      spn: { file: "aliaser.spn" }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=262&p=1116&hilit=aliaser#top",
+  },
+  {
+    name: "Bit crusher",
+    author: "Frank Thomson",
+    categories: ["Bitcrusher"],
+    download: {
+      spn: { file: "crusher.spn" }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=343",
+  },
+  {
+    name: "Hall - modified",
+    categories: ["Reverb"],
+    download: {
+      spn: { file: "hall_goldmine.spn" }
+    },
+    commentary: [
+      {
+        written_by: "potul",
+        comments: { html: `I think it was posted by Ice-9 in this topic, but I couldn't find it. <a target="_blank" href="https://www.diystompboxes.com/smfforum/index.php?topic=104291">https://www.diystompboxes.com/smfforum/index.php?topic=104291</a>` }
+      }
+    ],
+  },
+  {
+    name: "LFSR",
+    author: "Frank Thomson, OCT Distribution",
+    categories: ["Code snippet"],
+    download: {
+      spn: { file: "lfsr_random.spn" }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=245&p=1301",
+    application: "Code snippet",
+  },
+  {
+    name: "Multi program pitch shifter",
+    author: "patb",
+    description: "Inspired by commercial pedals. It has 6 programs, selectable by pot0",
+    categories: ["Pitch"],
+    download: {
+      spn: { file: "multipitch.spn" }
+    },
+    commentary: [
+      {
+        written_by: "patb",
+        comments: { text: `Its got 6 programs, selectable by pot0.
+the first 4 are dual shifts, that is 3 note harmonies.
+Crossfade the 2 shifts with pot1, and crossfade effect and dry with pot2.
+
+Fifth program is a single manual shift, with +/- 1 octave by pot1.
+This one is alot of fun with a microphone.
+
+Sixth is a detune chorus, with shift set by pot1.
+This one sounds very nice.  Laughing
+
+;pot0 6 program select, select one of 4 dual pitch shifts, manual pitch shift or detune chorus
+;pot1 dual shift crossfade or single pitch
+;pot2 crossfade between dry and shifts
+`}
+      }
+    ],
+  },
+  {
+    name: "Reverse delay",
+    author: "Knut Helle",
+    categories: ["Delay"],
+    download: {
+      spn: { file: "reverse_delay.spn" }
+    },
+  },
+  {
+    name: "Sawtooth waveform generator",
+    author: "slacker",
+    categories: ["Code snippet"],
+    download: {
+      spn: { file: "sawtooth.spn" }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=274&start=15",
+    application: "Code snippet",
+  },
+  {
+    name: "Reverb + Shimmer (Version 6)",
+    author: "Alex Lawrow",
+    description: "This routine is based on Mick Taylor's (Ice-9s) reverb loop and shimmer code with some changes such as...",
+    categories: ["Pitch"],
+    download: {
+      spn: { file: "shimmer_drAlx.spn" }
+    },
+    commentary: [
+      {
+        written_by: "Alex  Lawrow",
+        comments: { text: `This routine is based on Mick Taylor's (Ice-9s) reverb loop
+and shimmer code with some changes such as:
+
+1) Prime numbers for delay line lengths.
+2) More linear mapping of pot sweep to reverb time.
+3) Anti-aliasing filter before the pitch-shifter.
+4) Shimmer level is controlled by feeding both the input signal
+   and the reverb output into the pitch-shifter in varying amounts.
+5) Pitch-shifted signal is fed into a delay line to give a couple of short delays.
+   This lets the shimmer effect build up slowly in time.
+6) Output is 100% wet.  Uncomment line at bottom to add dry signal.
+
+;POT0 = Reverb time (0 to 10 seconds).
+;POT1 = Amount of treble in reverb loop.
+;POT2 = Shimmer level
+`}
+      }
+    ],
+  },
+  {
+    name: "Slocum Phase shifter",
+    description: "From GA_DEMO - mods by Doug Slocum 10/20/2017",
+    author: "Doug Slocum, Spin Semi",
+    categories: ["Phase"],
+    download: {
+      spn: { file: "slocum-phaser.spn" }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=707",
+    commentary: [
+      {
+        written_by: "Doug Slocum",
+        comments: { text: `Uses every last bloody program line!
+
+;Pot0 = Phase rate (manual if fully CCW)
+;Pot1 = Sweep width (or manual)
+;Pot2 = Num of Stages (4,6,8,10)
+`}
+      }
+    ],
+  },
+
+  {
+    name: "Geoffrey: Pitch shifted delay",
+    author: "slacker",
+    categories: ["Pitch", "Delay"],
+    download: {
+      spn: { file: "slacker-bf/bf_geoffrey.spn" }
+    },
+  },
+  {
+    name: "New octaver",
+    author: "slacker",
+    categories: ["Uncategorized"],
+    download: {
+      spn: { file: "slacker-bf/bf_newoctaver.spn" }
+    },
+  },
+  {
+    name: "Flanger",
+    author: "slacker",
+    categories: ["Flanger","Phaser"],
+    download: {
+      spn: { file: "slacker-bf/bf_phaser.spn" }
+    },
+  },
+  {
+    name: "Digifuzzer",
+    author: "slacker",
+    categories: ["Distortion"],
+    download: {
+      spn: { file: "slacker-bf/bf_digifuzzer.spn" }
+    },
+  },
+
 ]
