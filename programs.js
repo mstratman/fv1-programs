@@ -5,9 +5,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_CHORUS.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_CHORUS.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -18,9 +16,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_ECHO_RPT.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_ECHO_RPT.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -31,9 +27,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_ECHO.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_ECHO.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -44,9 +38,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_FLANGE.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_FLANGE.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -57,9 +49,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_PHASE.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_PHASE.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -70,9 +60,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_TREM.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_TREM.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -83,9 +71,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_VIBRATO.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_VIBRATO.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -96,9 +82,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/GA_DEMO_WAH.spn"
-      }
+      spn: { file: "spinsemi/GA_DEMO_WAH.spn" },
     },
     application: "Guitar amplifier",
     source_url: "http://spinsemi.com/guitar_amp_application.html"
@@ -111,9 +95,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rms_limiter.spn"
-      }
+      spn: { file: "spinsemi/rms_limiter.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -125,9 +107,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rms_lim_exp.spn"
-      }
+      spn: { file: "spinsemi/rms_lim_exp.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -139,9 +119,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/min_rev1.spn"
-      }
+      spn: { file: "spinsemi/min_rev1.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -152,9 +130,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rms_soft_knee.spn"
-      }
+      spn: { file: "spinsemi/rms_soft_knee.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -166,9 +142,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/simp_limiter.spn"
-      }
+      spn: { file: "spinsemi/simp_limiter.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -180,9 +154,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/thru_gain.spn"
-      }
+      spn: { file: "spinsemi/thru_gain.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -194,9 +166,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/singen.spn"
-      }
+      spn: { file: "spinsemi/singen.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -208,9 +178,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/battling_lfos.spn"
-      }
+      spn: { file: "spinsemi/battling_lfos.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -223,9 +191,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/battling_lfos.spn"
-      }
+      spn: { file: "spinsemi/battling_lfos.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -237,9 +203,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/act_xover.spn"
-      }
+      spn: { file: "spinsemi/act_xover.spn" },
     },
     application: "Code snippet",
     source_url: "http://spinsemi.com/programs.php"
@@ -251,9 +215,7 @@ export default [
     categories: ["Reverb","Filter"],
     author: "Dave Spinkler",
     download: {
-      spn: {
-        file: "spinsemi/dance_ir_h_l.spn"
-      }
+      spn: { file: "spinsemi/dance_ir_h_l.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/programs.php"
@@ -264,9 +226,7 @@ export default [
     categories: ["Reverb","Filter","Flanger"],
     author: "Dave Spinkler",
     download: {
-      spn: {
-        file: "spinsemi/dance_ir_fla_l.spn"
-      }
+      spn: { file: "spinsemi/dance_ir_fla_l.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/programs.php"
@@ -277,9 +237,7 @@ export default [
     categories: ["Reverb","Pitch","Filter"],
     author: "Dave Spinkler",
     download: {
-      spn: {
-        file: "spinsemi/dance_ir_fla_l.spn"
-      }
+      spn: { file: "spinsemi/dance_ir_fla_l.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/programs.php"
@@ -291,9 +249,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_0_Hall.spn",
-      }
+      spn: { file: "spinsemi/3K_V1_0_Hall.spn", },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -304,9 +260,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_1_Room.spn"
-      }
+      spn: { file: "spinsemi/3K_V1_1_Room.spn" },
     },
     application: "Mixer", source_url: "http://spinsemi.com/mixer_application.html",
   },
@@ -316,9 +270,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_2_PLATE.spn"
-      }
+      spn: { file: "spinsemi/3K_V1_2_PLATE.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -329,9 +281,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_3_GATED.spn"
-      }
+      spn: { file: "spinsemi/3K_V1_3_GATED.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -342,9 +292,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_4_ECHO-REV.spn"
-      }
+      spn: { file: "spinsemi/3K_V1_4_ECHO-REV.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -355,9 +303,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_5_STECHO-REV.spn"
-      }
+      spn: { file: "spinsemi/3K_V1_5_STECHO-REV.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -368,9 +314,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_6_CHOR-REV.spn"
-      }
+      spn: { file: "spinsemi/3K_V1_6_CHOR-REV.spn" },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -381,9 +325,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/3K_V1_7_FLANGE.spn",
-      }
+      spn: { file: "spinsemi/3K_V1_7_FLANGE.spn", },
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/mixer_application.html",
@@ -396,9 +338,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rom_pitch.spn",
-      }
+      spn: { file: "spinsemi/rom_pitch.spn", },
     },
     source_url: "http://spinsemi.com/programs.php"
   },
@@ -409,9 +349,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rom_pt_echo.spn",
-      }
+      spn: { file: "spinsemi/rom_pt_echo.spn", },
     },
     source_url: "http://spinsemi.com/programs.php"
   },
@@ -421,9 +359,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/key_rev.spn",
-      }
+      spn: { file: "spinsemi/key_rev.spn", },
     },
     application: "Karaoke",
     source_url: "http://spinsemi.com/programs.php"
@@ -435,9 +371,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rom_fla_rev.spn",
-      }
+      spn: { file: "spinsemi/rom_fla_rev.spn", },
     },
     source_url: "http://spinsemi.com/programs.php"
   },
@@ -448,9 +382,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rom_chor_rev.spn",
-      }
+      spn: { file: "spinsemi/rom_chor_rev.spn", },
     },
     source_url: "http://spinsemi.com/programs.php"
   },
@@ -461,9 +393,7 @@ export default [
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
-      spn: {
-        file: "spinsemi/rom_trem_rev.spn",
-      }
+      spn: { file: "spinsemi/rom_trem_rev.spn", },
     },
     source_url: "http://spinsemi.com/programs.php"
   },
@@ -1481,9 +1411,7 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     description: "Emulates the Function F(x) Parallax pedal. It's a tremolo with a phase shifter and speed controls for each",
     categories: ["Tremolo", "Phaser"],
     download: {
-      spcd: {
-        file: "madbeanpedals/parallax.spcd",
-      }
+      spcd: { file: "madbeanpedals/parallax.spcd", },
     },
   },
   {
@@ -1498,4 +1426,144 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     },
   },
 
+  {
+    name: "Flanger",
+    description: "A basic flanger. Designed for bass",
+    author: "Firesledge",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Flanger", "Bass"],
+    download: {
+      spcd: { file: "firesledge/bass-fv1-p0-flanger.spcd", },
+      spn: { file: "firesledge/bass-fv1-p0-flanger.spn", },
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Speed; Pot 1: Depth; Pot 2: Feedback" }
+      }
+    ],
+  },
+  {
+    name: "Phaser OD",
+    description: "A basic phaser with some overdrive in the feedback path. Designed for bass",
+    author: "Firesledge",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Phaser", "Bass"],
+    download: {
+      spcd: { file: "firesledge/bass-fv1-p1-phaser.spcd", },
+      spn: { file: "firesledge/bass-fv1-p1-phaser.spn", },
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Speed; Pot 1: Depth; Pot 2: Feedback" }
+      }
+    ],
+  },
+  {
+    name: "Delay OD",
+    description: "A delay with filtered overdrive in the feedback path. Designed for bass",
+    author: "Firesledge",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Delay", "Bass"],
+    download: {
+      spcd: { file: "firesledge/bass-fv1-p2-delay.spcd", },
+      spn: { file: "firesledge/bass-fv1-p2-delay.spn", }
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Time; Pot 1: Feedback; Pot 2: Dry/wet mix" }
+      }
+    ],
+  },
+  {
+    name: "Reverb",
+    description: "Simple reverberation effect. Designed for bass",
+    author: "Firesledge",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Reverb", "Bass"],
+    download: {
+      spn: { file: "firesledge/bass-fv1-p3-reverb.spn", },
+      spcd: { file: "firesledge/bass-fv1-p3-reverb.spcd", }
+    },
+   commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Time; Pot 1: Filter; Pot 2: Mix" }
+      }
+    ],
+  },
+  {
+    name: "Autowah",
+    description: "Automatic wah effect based on the signal volume. Designed for bass",
+    author: "Firesledge",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Filter", "Bass"],
+    download: {
+      spn: { file: "firesledge/bass-fv1-p4-autowah.spn", },
+      spcd: { file: "firesledge/bass-fv1-p4-autowah.spcd", }
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Amount (bidirectional, mid=neutral); Pot 1: Resonance; Pot 2: Frequency" }
+      }
+    ],
+  },
+  {
+    name: "Distortion",
+    description: "Simple distortion with variable gain, tone and mix. Designed for bass",
+    author: "Firesledge",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Distortion", "Bass"],
+    download: {
+      spn: { file: "firesledge/bass-fv1-p5-disto.spn", },
+      spcd: { file: "firesledge/bass-fv1-p5-disto.spcd", }
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Gain; Pot 1: Tone; Pot 2: Dry/wet mix" }
+      }
+    ],
+  },
+  {
+    name: "Filter tremolo+",
+    description: "Harmonic tremolo with distortion. Designed for bass",
+    author: "Firesledge, Digital Larry",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Tremolo", "Distortion", "Bass"],
+    download: {
+      spn: { file: "firesledge/bass-fv1-p6-filter-tremolo-disto.spn", },
+      spcd: { file: "firesledge/bass-fv1-p6-filter-tremolo-disto.spcd", },
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Speed; Pot 1: Resonance; Pot 2: Gain" }
+      },
+      {
+        written_by: "Firesledge",
+        comments: { html: `Modified from <a target="_blank" href="http://holycityaudio.com/forum/viewtopic.php?f=30&t=1660">http://holycityaudio.com/forum/viewtopic.php?f=30&t=1660</a>` },
+      },
+    ],
+  },
+  {
+    name: "Starfield+",
+    description: "Harmonic tremolo mixed with a delay. Based on Madbeanpedals Starfield.",
+    author: "Firesledge, madbeanpedals",
+    author_url: "http://ldesoras.free.fr/",
+    categories: ["Delay", "Tremolo", "Bass"],
+    download: {
+      spcd: { file: "firesledge/bass-fv1-p7-harm-trem-delay.spcd", },
+      spn: { file: "firesledge/bass-fv1-p7-harm-trem-delay.spn", }
+    },
+    commentary: [
+      {
+        written_by: "Firesledge",
+        comments: { text: "Pot 0: Delay; Pot 1: Speed + Delay/Tremolo mix; Pot2: Dry/wet mix" }
+      }
+    ],
+  },
 ]

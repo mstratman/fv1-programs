@@ -151,7 +151,7 @@
             </div>
           </div>
 
-          <div class="center-buttons">
+          <div class="center-buttons download-buttons">
             <a v-if="p.download.spn" class="button button-primary" target="_blank" :href="p.download.spn.url || `files/${p.download.spn.file}`">Download SpinASM</a>
             <a v-if="p.download.spbk" class="button button-primary" target="_blank" :href="p.download.spbk.url || `files/${p.download.spbk.file}`">Download SpinCad bank</a>
             <a v-if="p.download.spcd" class="button button-primary" target="_blank" :href="p.download.spcd.url || `files/${p.download.spcd.file}`">Download SpinCad</a>
@@ -434,6 +434,13 @@ export default {
 
     .special-pcb {
       color: red;
+    }
+
+    .download-buttons {
+      a, input, button {
+        margin-right: 2px;
+        margin-left: 2px;
+      }
     }
 
     .more-section {
