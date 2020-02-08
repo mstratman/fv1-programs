@@ -1545,7 +1545,7 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
       },
       {
         written_by: "Firesledge",
-        comments: { html: `Modified from <a target="_blank" href="http://holycityaudio.com/forum/viewtopic.php?f=30&t=1660">http://holycityaudio.com/forum/viewtopic.php?f=30&t=1660</a>` },
+        comments: { text: `Modified from http://holycityaudio.com/forum/viewtopic.php?f=30&t=1660` },
       },
     ],
   },
@@ -1616,7 +1616,7 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     commentary: [
       {
         written_by: "potul",
-        comments: { html: `I think it was posted by Ice-9 in this topic, but I couldn't find it. <a target="_blank" href="https://www.diystompboxes.com/smfforum/index.php?topic=104291">https://www.diystompboxes.com/smfforum/index.php?topic=104291</a>` }
+        comments: { text: `I think it was posted by Ice-9 in this topic, but I couldn't find it. https://www.diystompboxes.com/smfforum/index.php?topic=104291` }
       }
     ],
   },

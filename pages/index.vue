@@ -141,7 +141,7 @@
                 <span class="no-comments" v-if="p.commentary == undefined || p.commentary.length == 0">none yet</span>
                 <div v-for="c in p.commentary" class="comment">
                   <div><span class="comment-author">{{c.written_by}}</span> says</div>
-                  <div class="commentary-text">{{c.comments.text}}<span v-if="c.comments.html" v-html="c.comments.html"></span></div>
+                  <div class="commentary-text">{{c.comments.text}}</div>
                 </div>
               </div>
               <div class="contribute more-section">

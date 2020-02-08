@@ -76,9 +76,9 @@ export default [
 * **schematic_file**: If this requires a custom PCB, the schematic should be included in the `files` directory and its filename used here (if possible).
 * **commentary**: An array of objects with "written_by" and "comments" keys.  This allows anyone to interject their experiences, recommendations, or other thoughts into the site.
   * **written_by** The name of the person who said this
-  * **comments** Object with either "text" or "html"
+  * **comments** Object with either "text" ~~or "html"~~
     * **text** A string with the comments they want to share. You can use backticks (ES6 template literal) to quote this, to make it easier to paste multi-line comments.
-    * **html** Raw HTML, e.g. if you need to include links. Be careful with this.
+    * ~~**html** Raw HTML, e.g. if you need to include links. Be careful with this.~~ We are not currently supporting this, as it causes issues with Nuxt SSR
 
 ## Directory structure
 
