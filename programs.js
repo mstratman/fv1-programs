@@ -1760,5 +1760,68 @@ and shimmer code with some changes such as:
       spn: { file: "slacker-bf/bf_digifuzzer.spn" }
     },
   },
+  {
+    name: "Envelope Phaser",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Filter", "Phaser"],
+    download: {
+      spn: { file: "drolo/envelope-phaser.spn" }
+    },
+  },
+  {
+    name: "Filter: env LP HP up",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Filter"],
+    download: {
+      spn: { file: "drolo/filter-env-LP-HP-up.spn" }
+    },
+  },
+  {
+    name: "Flanger",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Flanger"],
+    download: {
+      spn: { file: "drolo/flanger.spn" }
+    },
+  },
+  {
+    name: "Pitch Step Glider.spn",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Pitch"],
+    download: {
+      spn: { file: "drolo/pitch-step-glider.spn" }
+    },
+  },
+  {
+    name: "Random Loop Delay",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Delay"],
+    download: {
+      spn: { file: "drolo/random-loop-delay.spn" }
+    },
+  },
+  {
+    name: "Reverb",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Reverb"],
+    download: {
+      spn: { file: "drolo/reverb.spn" }
+    },
+  },
+  {
+    name: "Ring Pitchulator",
+    author: "David Rolo",
+    author_url: "https://www.davidrolo.com/",
+    categories: ["Ring Modulator", "Pitch"],
+    download: {
+      spn: { file: "drolo/ring-pitchulator.spn" }
+    },
+  },
 
 ]
