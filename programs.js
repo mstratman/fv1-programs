@@ -1823,5 +1823,19 @@ and shimmer code with some changes such as:
       spn: { file: "drolo/ring-pitchulator.spn" }
     },
   },
+  {
+    name: "Resonator",
+    categories: ["Uncategorized"],
+    download: {
+      spn: { file: "resonator.spn" }
+    },
+  },
+  {
+    name: "BM Pi",
+    categories: ["Uncategorized"],
+    download: {
+      spn: { file: "bm-pi.spn" }
+    },
+  },
 
 ]
