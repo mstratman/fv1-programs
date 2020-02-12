@@ -49,6 +49,9 @@ button:disabled, button:disabled:hover,
 button[disabled], button[disabled]:hover {
   color: #bfbfbf;
 }
+.button.keep-case {
+  text-transform: none !important;
+}
 
 .text-center { text-align: center; }
 

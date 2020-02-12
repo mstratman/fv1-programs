@@ -152,9 +152,10 @@
           </div>
 
           <div class="center-buttons download-buttons">
-            <a v-if="p.download.spn" class="button button-primary" target="_blank" :href="p.download.spn.url || `files/${p.download.spn.file}`">Download SpinASM</a>
-            <a v-if="p.download.spbk" class="button button-primary" target="_blank" :href="p.download.spbk.url || `files/${p.download.spbk.file}`">Download SpinCad bank</a>
-            <a v-if="p.download.spcd" class="button button-primary" target="_blank" :href="p.download.spcd.url || `files/${p.download.spcd.file}`">Download SpinCad</a>
+            <a v-if="p.download.spn" class="button button-primary keep-case" target="_blank" :href="p.download.spn.url || `files/${p.download.spn.file}`">Download SpinASM</a>
+            <a v-if="p.download.spbk" class="button button-primary keep-case" target="_blank" :href="p.download.spbk.url || `files/${p.download.spbk.file}`">Download SpinCAD Bank</a>
+            <a v-if="p.download.spcd" class="button button-primary keep-case" target="_blank" :href="p.download.spcd.url || `files/${p.download.spcd.file}`">Download SpinCAD</a>
+            <a v-if="p.download.hex" class="button button-primary keep-case" target="_blank" :href="p.download.hex.url || `files/${p.download.hex.file}`">Download Hex</a>
           </div>
         </div>
 
