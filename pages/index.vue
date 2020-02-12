@@ -97,7 +97,7 @@
         </div>
 
 
-        <div v-if="p.description || p.author" class="row">
+        <div class="row">
           <div class="one column d-none-mobile">&nbsp;</div>
           <div class="five columns">
             <span v-if="p.author" class="author">
@@ -482,6 +482,9 @@ export default {
       }
       .controls {
         ol, ul {
+          li {
+            line-height: 1.2;
+          }
           margin-left: 3rem;
         }
       }
