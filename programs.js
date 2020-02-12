@@ -945,6 +945,7 @@ export default [
   },
   {
     name: "Freeverb",
+    description: "Freeverb is a stereo reverb unit based on Jezar's public domain C++ sources, composed of eight parallel comb filters on both channels, followed by four allpass units in series. The filters on the right channel are slightly detuned compared to the left channel in order to create a stereo effect.",
     author: "basilrush",
     categories: ["Reverb"],
     download: {
@@ -953,6 +954,13 @@ export default [
       }
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?t=309",
+    controls: ["Comb feedback", "-", "-"],
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "This effect makes me feel like I'm in a tin spaceship on my way to the moon. In an awesome way." },
+      },
+    ],
   },
   {
     name: "Greenwood Delay",
@@ -1048,6 +1056,12 @@ export default [
       }
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=452",
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "Works well; I like this." },
+      },
+    ],
   },
   {
     name: "Stereo Dual Flange Multi Tap Delay",
@@ -1571,6 +1585,12 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?t=418",
     application: "Code snippet",
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "At first I thought it wasn't working. Then 8 seconds later, it proved me wrong :)" },
+      },
+    ],
   },
   {
     name: "Reverse delay",
@@ -1600,6 +1620,12 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
       spn: { file: "crusher.spn" }
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=343",
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "Definitely does as advertised. I could see this having a special place on somebody's pedal board, but it's niche for sure." },
+      },
+    ],
   },
   {
     name: "Hall - modified",
@@ -1607,10 +1633,15 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     download: {
       spn: { file: "hall_goldmine.spn" }
     },
+    controls: [ "Damping", "Level", "Time" ],
     commentary: [
       {
         written_by: "potul",
         comments: { text: `I think it was posted by Ice-9 in this topic, but I couldn't find it. https://www.diystompboxes.com/smfforum/index.php?topic=104291` }
+      },
+      {
+        written_by: "Mark S.",
+        comments: { text: "This sounds good. Unless I did something wrong, though, its controls are very subtle. Admittedly I didn't spend much time with this, though.", },
       }
     ],
   },
@@ -1709,6 +1740,7 @@ and shimmer code with some changes such as:
       spn: { file: "slocum-phaser.spn" }
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=707",
+    controls: ["Phase rate", "Sweep width", "Number of stages"],
     commentary: [
       {
         written_by: "Doug Slocum",
@@ -1718,7 +1750,11 @@ and shimmer code with some changes such as:
 ;Pot1 = Sweep width (or manual)
 ;Pot2 = Num of Stages (4,6,8,10)
 `}
-      }
+      },
+      {
+        written_by: "Mark S.",
+        comments: { text: "I really enjoy using this. It's a good, solid phaser, but can really turn up its personality if you crank up the width and add more stages." }
+      },
     ],
   },
 
@@ -1823,6 +1859,12 @@ and shimmer code with some changes such as:
     download: {
       spn: { file: "resonator.spn" }
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "I didn't get this to work." },
+      },
+    ],
   },
   {
     name: "BM Pi",
