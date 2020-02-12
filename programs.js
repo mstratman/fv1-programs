@@ -1892,4 +1892,105 @@ and shimmer code with some changes such as:
     controls: ["Gain Threshold", "Volume", "Tone"],
   },
 
+  {
+    name: "Improved Octave Up",
+    author: "Don Stavely",
+    description: "This solves for the 'crossfade cancellation' issue...",
+    categories: ["Octave", "Code snippet"],
+    download: {
+      spn: {
+        file: "improved_octave_up.spn",
+      }
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=467",
+    commentary: [
+      {
+        written_by: "Don Stavely",
+        comments: { text: `;Folks who have played with the pitch-shift routine for octave-up and octave-down know about the "crossfade phase cancellation" issue.
+;For octave-down, you get a tremolo effect due to the slower ramp speed (-8192). But for octave-up, the fast ramp (16384) results in an unpleasant warble.
+;We can't use a longer delay than 4096, so we are stuck with it, right?
+
+;Here is a trick I just came up with: Do two pitch shifts in a row, each shifting up by the square root of two.
+;The magic ramp speed is 6783. Voila, an octave up with a pleasing tremolo instead of the warble.
+;It requires another 4096 memory and 8 instructions, but still only 1 ramp (so you can still use the other for octave down, etc).
+
+;Yes, the tradeoff is latency. In the application I am working on I am going for more of a chorus effect - i.e. multiple instruments rather than a single instrument like a 12-string.
+
+;Notice that I write 512 words into the 4096-word delay. This reduces the latency by that amount.
+;The reason you can do this is that the crossfade waveform is zero for the first 1/8th of the delay. If you try a 2048 word delay you will have to change the "wra delay1+512,0" to "wra delay1+256, 0" in both places. This is probably why it sounded worse than the standard single-step 4096 algorithm.
+
+;Frank commented in an older thread that this trick of writing 1/8th of the way into the buffer shouldn't work.
+;I assure you (and Frank) that does. It is totally glitchless, and reduces the average latency by 1/4 for free. I don't think Frank considered it carefully.
+  `},
+      },
+    ],
+  },
+  {
+    name: "Minimal Reverb - no controls",
+    categories: ["Reverb", "Code snippet"],
+    download: {
+      spn: { file: "min_rev1.spn" },
+    },
+    controls: ["-", "-", "-"],
+  },
+  {
+    name: "7-Band Parametric EQ",
+    categories: ["Code snippet"],
+    download: {
+      spn: { file: "parametric-eq-7.spn" },
+    },
+    application: "Code snippet",
+  },
+  {
+    name: "Slow Gear",
+    author: "patb, Don Stavely",
+    categories: ["Uncategorized"],
+    download: {
+      spn: { file: "slowgear-2.spn" },
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=174",
+  },
+  {
+    name: "Slow Gear (simple)",
+    author: "Alex MAK",
+    categories: ["Uncategorized"],
+    download: {
+      spn: { file: "slowgear-simple.spn" },
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=174",
+  },
+  {
+    name: "Thru Gain",
+    categories: ["Code snippet"],
+    download: {
+      spn: { file: "thru-gain.spn" },
+    },
+    application: "Code snippet",
+  },
+  {
+    name: "Tremolo w/ Multiple LFO Waveshapes",
+    author: "Slacker",
+    categories: ["Tremolo"],
+    download: {
+      spn: { file: "tremolo-shapes.spn" },
+    },
+    controls: ["Wave shape", "Depth", "Speed"],
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=3&t=516",
+    commentary: [
+      {
+        written_by: "Slacker",
+        comments: { text: "If anyone's interested here's a tremolo I did using pot skip routines to do Sine, rectified sine both ways so pointy or humpy :) up and down ramps, triangle, trapezoid and square. All the wave shapes are scaled to the same range. Some of the wave shapes aren't that useful it was more an exercise in generating them than an attempt at a decent trem." },
+      },
+    ],
+  },
+  {
+    name: "Whammy",
+    author: "deepMago!",
+    categories: ["Pitch"],
+    download: {
+      spn: { file: "whammy.spn" },
+    },
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=296",
+  },
+
 ]
