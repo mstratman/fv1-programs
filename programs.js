@@ -1873,5 +1873,23 @@ and shimmer code with some changes such as:
       spn: { file: "bm-pi.spn" }
     },
   },
+  {
+    name: "Ping Pong Delay",
+    author: "Frank Thomson",
+    categories: ["Delay"],
+    download: {
+      spn: { file: "pingpong.spn" },
+    },
+    controls: ["Ping time", "Pong time", "Feedback"],
+  },
+  {
+    name: "Soft Clipping Overdrive",
+    author: "Jeroen Korterik",
+    categories: ["Distortion"],
+    download: {
+      spn: { file: "softclipping_overdrive.spn" },
+    },
+    controls: ["Gain Threshold", "Volume", "Tone"],
+  },
 
 ]
