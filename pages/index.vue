@@ -137,6 +137,12 @@
                 <strong>Sourced from:</strong>
                 <a target="_blank" :href="p.source_url">{{p.source_url}}</a>
               </div>
+              <div v-if="p.controls" class="controls more-section">
+                <strong>Controls:</strong>
+                <ol>
+                  <li v-for="ctl in p.controls">{{ctl}}</li>
+                </ol>
+              </div>
               <div class="application more-section">
                 <strong>Application: </strong>
                 {{p.application || "Guitar"}}
@@ -473,6 +479,11 @@ export default {
     .more {
       .source {
         a { font-size: 1.2rem; }
+      }
+      .controls {
+        ol, ul {
+          margin-left: 3rem;
+        }
       }
       .commentary {
         .comment {

@@ -56,6 +56,7 @@ export default [
     ],
     // You'll generaally omit this. We assume it's a guitar pedal, unless this is set to something else
     application: "mixer",
+    controls: [ "Time", "Dwell", "Feedback" ],
   }
 ]
 ```
@@ -79,6 +80,7 @@ export default [
   * **comments** Object with either "text" ~~or "html"~~
     * **text** A string with the comments they want to share. You can use backticks (ES6 template literal) to quote this, to make it easier to paste multi-line comments.
     * ~~**html** Raw HTML, e.g. if you need to include links. Be careful with this.~~ We are not currently supporting this, as it causes issues with Nuxt SSR
+* **controls** array of 1-3 labels for the pot controls.
 
 ## Directory structure
 
