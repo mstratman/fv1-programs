@@ -1167,6 +1167,12 @@ export default [
     download: {
       spbk: {
         file: "holy-city-audio/chorus-demo-bank-2018.spbk",
+      },
+      spn: {
+        file: "holy-city-audio/chorus-demo-bank-2018-spinasm.zip",
+      },
+      hex: {
+        file: "holy-city-audio/chorus-demo-bank-2018.hex",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
