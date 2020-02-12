@@ -185,18 +185,6 @@ export default [
   },
 
   {
-    name: "Battling LFOs",
-    description: "What happens when one LFO controls another, and that controls another and that controls another and that controls the first one?",
-    categories: ["Code snippet"],
-    author: "Spin Semi",
-    author_url: "http://spinsemi.com/",
-    download: {
-      spn: { file: "spinsemi/battling_lfos.spn" },
-    },
-    application: "Code snippet",
-    source_url: "http://spinsemi.com/programs.php"
-  },
-  {
     name: "Active crossover",
     description: "Active cross-over program for speaker equalization. Multiple bands of parametric EQ, etc.",
     categories: ["Code snippet"],
