@@ -108,6 +108,11 @@
               <template v-else>{{p.author}}</template>
             </span>
             &nbsp;
+            <div v-if="p.commentary && p.commentary.length > 0" class="num-comments" @click="showMore(i_p)">
+              <font-awesome-icon :icon="['fas', 'comment']" class="icon" />
+              {{p.commentary.length}}
+              comment<template v-if="p.commentary.length > 1">s</template>
+            </div>
           </div>
           <div class="six columns">
             <div class="description">{{p.description}}&nbsp;</div>
@@ -191,6 +196,11 @@ import all_programs from '../programs.js'
 import Multiselect from 'vue-multiselect'
 import "vue-multiselect/dist/vue-multiselect.min.css"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faComment)
 
 export default {
   head: function() {
@@ -205,6 +215,7 @@ export default {
   components: {
     Multiselect,
     GithubCorner,
+    FontAwesomeIcon,
   },
 
   data: function() {
@@ -441,6 +452,17 @@ export default {
       a, input, button {
         margin-right: 2px;
         margin-left: 2px;
+      }
+    }
+
+    .num-comments {
+      color: #8c8c8c;
+      font-size: 1.2rem;
+      cursor: pointer;
+      .icon {
+        font-size: 1.8rem;
+        color: #00ba73;
+        margin-right: 0.8rem;
       }
     }
 
