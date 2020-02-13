@@ -1342,7 +1342,10 @@ Pot2 = feedback` }
     download: {
       spcd: {
         file: "madbeanpedals/spacedash.spcd",
-      }
+      },
+      spn: {
+        file: "madbeanpedals/spacedash.spn",
+      },
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
   },
@@ -1351,9 +1354,8 @@ Pot2 = feedback` }
     author: "Digital Larry",
     categories: ["Reverb", "Shimmer"],
     download: {
-      spcd: {
-        file: "holy-city-audio/shimmer.spcd",
-      }
+      spcd: { file: "holy-city-audio/shimmer.spcd", },
+      spn: { file: "holy-city-audio/shimmer.spn", },
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
   },
@@ -1394,11 +1396,26 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     author_url: "https://madbeanpedals.com/",
     description: "This is a delay that allows you to mix in a phaser with the delays",
     categories: ["Delay", "Phaser"],
+    controls: ["Delay time", "Feedback", "Sweep"],
     download: {
-      spcd: {
-        file: "madbeanpedals/starfield.spcd",
-      }
+      spcd: { file: "madbeanpedals/starfield.spcd", },
+      spn: { file: "madbeanpedals/starfield.spn", },
     },
+    commentary: [
+      {
+        written_by: "madbeanpedals",
+        comments: { text: `P0 sets delay time from a few ms to about 975ms.
+
+P1 sets the feedback amount from 0 to max. The Feedback path is also has both HP and LP filters
+(70Hz and 2290Hz resp.) for a bit of bucket-brigade flavor.
+
+P2 sets the amount of phaser sweep in the feedback path from 0 - slow - fast.
+
+Possible mods:
+Change the LPF filter in the Feedback path for brighter or darker delay tones.
+Change the Frequency and Resonant peak settings in the SVF 2P block for different phaser tones. `}
+      },
+    ],
   },
   {
     name: "Choir Saw",
@@ -1406,11 +1423,28 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     author_url: "https://madbeanpedals.com/",
     description: "A delay with pitch shift in the feedback path. Kind of a discount EQD Rainbow Machine",
     categories: ["Delay", "Pitch"],
+    controls: ["Delay time", "Feedback and Pitch Volume", "Speed"],
     download: {
-      spcd: {
-        file: "madbeanpedals/choir-saw.spcd",
-      }
+      spcd: { file: "madbeanpedals/choir-saw.spcd", },
+      spn: { file: "madbeanpedals/choir-saw.spn", },
     },
+    commentary: [
+      {
+        written_by: "madbeanpedals",
+        comments: { text: `The Choirsaw (mono edition) is a bit on the bizarre side. It's a delay at its core but combines pitch shifting and tremolo. The result is something pretty unique and also musically interesting.
+
+P0 sets the delay time from long to short (about 800ms to a few ms). It also cross-fades into the
+pitch-shift as it is turned up. So, when the delay gets shorter more pitch shift is available in the
+feedback path.
+
+P1 sets the feedback amount and pitch shift volume. The key to making this sound good was
+being pretty aggressive with the filter on the pitch shift. With too little filtering is just sounded like
+an icepick as the notes continuously jumped octaves. As is, it creates more of a sonic bed as the
+octaves increase.
+
+P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really interesting when you set the delay to slow, feedback high and trem fast. Try it!` },
+      },
+    ],
   },
   {
     name: "Parallax",
@@ -1418,8 +1452,10 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     author_url: "https://madbeanpedals.com/",
     description: "Emulates the Function F(x) Parallax pedal. It's a tremolo with a phase shifter and speed controls for each",
     categories: ["Tremolo", "Phaser"],
+    controls: ["Phaser speed", "Feedback and Width", "Tremolo speed"],
     download: {
       spcd: { file: "madbeanpedals/parallax.spcd", },
+      spn: { file: "madbeanpedals/parallax.spn", },
     },
   },
   {
