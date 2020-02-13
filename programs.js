@@ -1039,6 +1039,7 @@ export default [
     name: "Stereo Ring Modulators w/ Chorus",
     author: "Digital Larry",
     categories: ["Chorus", "Ring Modulator"],
+    controls: ["Blend", "Carrier offset", "Chorus"],
     download: {
       spn: {
         file: "stereo-ring-modulators-with-chorus.spn",
@@ -1286,6 +1287,7 @@ This is similar to harmonic tremolo as found in some vintage tube amps. Harmonic
         file: "holy-city-audio/oil-can-delay.spn",
       }
     },
+    controls: ["Time & rate", "Chorus width", "Feedback"],
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
     commentary: [
       {
@@ -1301,6 +1303,10 @@ I used the multi-tap delay block because supposedly some oil can delays had two 
 Pot0 = delay time/lfo rate (limited range setting, try making it longer if you like)
 Pot1 = chorus width
 Pot2 = feedback` }
+      },
+      {
+        written_by: "Mark S.",
+        comments: { text: "This sounds really nice, and takes on a very 'rubbery' sound to it when you crank up the chorus width" },
       },
     ],
   },
@@ -1339,6 +1345,7 @@ Pot2 = feedback` }
     author: "madbeanpedals",
     author_url: "https://madbeanpedals.com/",
     categories: ["Uncategorized"],
+    controls: ["Intensity", "Rate", "Mix"],
     download: {
       spcd: {
         file: "madbeanpedals/spacedash.spcd",
@@ -1383,12 +1390,19 @@ I'm sure there's more that could be done here. Play with the LFO width (shorter 
     author: "Digital Larry",
     categories: ["Reverb", "Tremolo","Aliaser"],
     description: "Square Wave Tremolo with envelope controlled aliaser and reverb. Because why not?",
+    controls: ["Speed", "Depth", "Reverb level and Envelope sensitivity"],
     download: {
       spn: {
         file: "holy-city-audio/tremolo-aliaser-reverb.spn",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "This may very well be known and/or intentional, but just to note: I get a lot of distortion with this one." },
+      },
+    ],
   },
   {
     name: "Starfield",
@@ -1414,6 +1428,10 @@ P2 sets the amount of phaser sweep in the feedback path from 0 - slow - fast.
 Possible mods:
 Change the LPF filter in the Feedback path for brighter or darker delay tones.
 Change the Frequency and Resonant peak settings in the SVF 2P block for different phaser tones. `}
+      },
+      {
+        written_by: "Mark S.",
+        comments: { text: "I wasn't able to get this to work. Neither with the spn nor the spcd. Haven't done any investigation yet, though" },
       },
     ],
   },
@@ -1457,6 +1475,12 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
       spcd: { file: "madbeanpedals/parallax.spcd", },
       spn: { file: "madbeanpedals/parallax.spn", },
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "It's really easy to make some out-of-this-world sounds - great for experimental, trippy music - but with some careful tweaking you can achieve som really beautiful effects that are simpler to harness." },
+      },
+    ],
   },
   {
     name: "Spring Reverb + Tremolo",
@@ -1476,16 +1500,11 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Flanger", "Bass"],
+    controls: ["Speed", "Depth", "Feedback"],
     download: {
       spcd: { file: "firesledge/bass-fv1-p0-flanger.spcd", },
       spn: { file: "firesledge/bass-fv1-p0-flanger.spn", },
     },
-    commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Speed; Pot 1: Depth; Pot 2: Feedback" }
-      }
-    ],
   },
   {
     name: "Phaser OD",
@@ -1493,16 +1512,11 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Phaser", "Bass"],
+    controls: ["Speed", "Depth", "Feedback"],
     download: {
       spcd: { file: "firesledge/bass-fv1-p1-phaser.spcd", },
       spn: { file: "firesledge/bass-fv1-p1-phaser.spn", },
     },
-    commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Speed; Pot 1: Depth; Pot 2: Feedback" }
-      }
-    ],
   },
   {
     name: "Delay OD",
@@ -1510,16 +1524,11 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Delay", "Bass"],
+    controls: ["Time", "Feedback", "Dry/wet mix"],
     download: {
       spcd: { file: "firesledge/bass-fv1-p2-delay.spcd", },
       spn: { file: "firesledge/bass-fv1-p2-delay.spn", }
     },
-    commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Time; Pot 1: Feedback; Pot 2: Dry/wet mix" }
-      }
-    ],
   },
   {
     name: "Reverb",
@@ -1527,16 +1536,11 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Reverb", "Bass"],
+    controls: ["Time", "Filter", "Mix"],
     download: {
       spn: { file: "firesledge/bass-fv1-p3-reverb.spn", },
       spcd: { file: "firesledge/bass-fv1-p3-reverb.spcd", }
     },
-   commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Time; Pot 1: Filter; Pot 2: Mix" }
-      }
-    ],
   },
   {
     name: "Autowah",
@@ -1544,6 +1548,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Filter", "Bass"],
+    controls: ["Amount", "Resonance", "Frequency"],
     download: {
       spn: { file: "firesledge/bass-fv1-p4-autowah.spn", },
       spcd: { file: "firesledge/bass-fv1-p4-autowah.spcd", }
@@ -1561,16 +1566,11 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Distortion", "Bass"],
+    controls: ["Gain", "Tone", "Dry/wet mix"],
     download: {
       spn: { file: "firesledge/bass-fv1-p5-disto.spn", },
       spcd: { file: "firesledge/bass-fv1-p5-disto.spcd", }
     },
-    commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Gain; Pot 1: Tone; Pot 2: Dry/wet mix" }
-      }
-    ],
   },
   {
     name: "Filter tremolo+",
@@ -1582,11 +1582,8 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
       spn: { file: "firesledge/bass-fv1-p6-filter-tremolo-disto.spn", },
       spcd: { file: "firesledge/bass-fv1-p6-filter-tremolo-disto.spcd", },
     },
+    controls: ["Speed", "Resonance", "Gain"],
     commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Speed; Pot 1: Resonance; Pot 2: Gain" }
-      },
       {
         written_by: "Firesledge",
         comments: { text: `Modified from http://holycityaudio.com/forum/viewtopic.php?f=30&t=1660` },
@@ -1599,16 +1596,11 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Firesledge, madbeanpedals",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Delay", "Tremolo", "Bass"],
+    controls: ["Delay", "Speed + Delay/Tremolo mix", "Dry/wet mix"],
     download: {
       spcd: { file: "firesledge/bass-fv1-p7-harm-trem-delay.spcd", },
       spn: { file: "firesledge/bass-fv1-p7-harm-trem-delay.spn", }
     },
-    commentary: [
-      {
-        written_by: "Firesledge",
-        comments: { text: "Pot 0: Delay; Pot 1: Speed + Delay/Tremolo mix; Pot2: Dry/wet mix" }
-      }
-    ],
   },
 
   {
@@ -1885,9 +1877,16 @@ and shimmer code with some changes such as:
     author: "David Rolo",
     author_url: "https://www.davidrolo.com/",
     categories: ["Ring Modulator", "Pitch"],
+    controls: ["Ringmod rate", "Pitch blend", "Pitch"],
     download: {
       spn: { file: "drolo/ring-pitchulator.spn" }
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "If you want to prepare to be able to talk to our future robotic, alien overlords, make sure to put this on your pedalboard. Works especially well for single notes." },
+      },
+    ],
   },
   {
     name: "Resonator",
