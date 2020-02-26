@@ -242,11 +242,18 @@ export default [
     description: "Reverb plus pitch plus 4-pole low-pass",
     categories: ["Reverb","Pitch","Filter"],
     author: "Dave Spinkler",
+    controls: ["Reverb", "Pitch", "Filter"],
     download: {
-      spn: { file: "spinsemi/dance_ir_fla_l.spn" },
+      spn: { file: "spinsemi/dance_ir_ptz_l.spn" },
     },
     application: "Mixer",
-    source_url: "http://spinsemi.com/programs.php"
+    source_url: "http://spinsemi.com/programs.php",
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "I'm struggling to get this to compile. Possibly a stray bad character somewhere?" }
+      },
+    ],
   },
 
   {
@@ -676,6 +683,7 @@ export default [
   {
     name: "Single Head Tape Echo + Spring Reverb",
     categories: ["Reverb","Delay"],
+    controls: ["Time", "Feedback", "Reverb"],
     download: {
       spn: {
         file: "dervish/drv102/dv102-1head-reverb.spn"
@@ -686,6 +694,7 @@ export default [
   {
     name: "Dual Head Tape Echo + Spring Reverb",
     categories: ["Reverb","Delay"],
+    controls: ["Time", "Feedback", "Reverb"],
     download: {
       spn: {
         file: "dervish/drv102/dv102-2head-reverb.spn"
@@ -718,6 +727,7 @@ export default [
   {
     name: "Single Head Tape Echo",
     categories: ["Delay"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/drv103/dv103-1head.spn"
@@ -728,6 +738,7 @@ export default [
   {
     name: "Single Head Tape Echo + Reverb",
     categories: ["Delay", "Reverb"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/drv103/dv103-1head-4xreverb.spn",
@@ -780,6 +791,7 @@ export default [
   {
     name: "Stereo Pitch Transposer w/ Feedback and Delay",
     categories: ["Delay", "Pitch"],
+    controls: ["Pitch", "Feedback", "Delay"],
     download: {
       spn: {
         file: "dervish/pitch+fb+delay.spn",
@@ -1000,6 +1012,7 @@ export default [
     name: "Greenwood Delay",
     author: "slacker",
     categories: ["Delay"],
+    controls: ["Speed", "Time", "Randomness"],
     download: {
       spn: {
         file: "greenwood-delay.spn",
@@ -1051,6 +1064,7 @@ export default [
   {
     name: "Octave Up and Down",
     categories: ["Octave","Pitch"],
+    controls: ["Mix", "Octave up", "Octave down"],
     download: {
       spn: {
         file: "up-down-octaver.spn"
@@ -1087,7 +1101,7 @@ export default [
     categories: ["Delay"],
     download: {
       spn: {
-        file: "stereo-ring-modulators-with-chorus.spn",
+        file: "triple-delay-feedback.spn",
       }
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=452",
@@ -1113,6 +1127,7 @@ export default [
     name: "Modulated Echo",
     author: "patb",
     categories: ["Delay"],
+    controls: ["Time", "Depth", "Level"],
     download: {
       spn: {
         file: "modulated-echo.spn",
@@ -1729,6 +1744,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "patb",
     description: "Inspired by commercial pedals. It has 6 programs, selectable by pot0",
     categories: ["Pitch"],
+    controls: ["Program select", "Cross fade", "Wet / dry mix"],
     download: {
       spn: { file: "multipitch.spn" }
     },
@@ -1831,9 +1847,16 @@ and shimmer code with some changes such as:
     name: "Geoffrey: Pitch shifted delay",
     author: "slacker",
     categories: ["Pitch", "Delay"],
+    controls: ["Delay", "Pitch select", "Feedback"],
     download: {
       spn: { file: "slacker-bf/bf_geoffrey.spn" }
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "I couldn't get this to work." }
+      },
+    ],
   },
   {
     name: "New octaver",
@@ -1925,6 +1948,7 @@ and shimmer code with some changes such as:
     author: "David Rolo",
     author_url: "https://www.davidrolo.com/",
     categories: ["Reverb"],
+    controls: ["Decay", "Pre-delay", "Filter"],
     download: {
       spn: { file: "drolo/reverb.spn" }
     },
@@ -1960,7 +1984,8 @@ and shimmer code with some changes such as:
   },
   {
     name: "BM Pi",
-    categories: ["Uncategorized"],
+    categories: ["Distortion"],
+    controls: ["Gain", "Tone", "-"],
     download: {
       spn: { file: "bm-pi.spn" }
     },
@@ -2083,6 +2108,7 @@ and shimmer code with some changes such as:
     name: "Whammy",
     author: "deepMago!",
     categories: ["Pitch"],
+    controls: ["Whammy", "Pitch range", "-"],
     download: {
       spn: { file: "whammy.spn" },
     },
