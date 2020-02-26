@@ -4,6 +4,7 @@ export default [
     categories: ["Chorus"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb", "Rate", "Level"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_CHORUS.spn" },
     },
@@ -37,17 +38,19 @@ export default [
     categories: ["Flanger"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb level", "Flange rate", "Effect level w/ feedback"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_FLANGE.spn" },
     },
     application: "Guitar amplifier",
-    source_url: "http://spinsemi.com/guitar_amp_application.html"
+    source_url: "http://spinsemi.com/guitar_amp_application.html",
   },
   {
     name: "Phase shifter",
     categories: ["Phaser"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb", "Rate", "Width"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_PHASE.spn" },
     },
@@ -70,6 +73,7 @@ export default [
     categories: ["Vibrato"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb", "Rate", "Width"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_VIBRATO.spn" },
     },
@@ -213,11 +217,25 @@ export default [
     description: "Reverb plus flange plus 4-pole low pass",
     categories: ["Reverb","Filter","Flanger"],
     author: "Dave Spinkler",
+    controls: ["Reverb", "Flanger", "Low Pass Filter"],
     download: {
       spn: { file: "spinsemi/dance_ir_fla_l.spn" },
     },
     application: "Mixer",
-    source_url: "http://spinsemi.com/programs.php"
+    source_url: "http://spinsemi.com/programs.php",
+    commentary: [
+      {
+        written_by: "Dave Spinkler",
+        comments: { text: `;disco mixer program
+;pot0 = reverb to infinity
+;pot1 = flange; zero delay at full counter clockwise
+;pot2 = low pass filter (4 pole)`}
+      },
+      {
+        written_by: "Mark S.",
+        comments: { text: "If you take the time to dial in the LP filter, and adjust the wet/dry mix, you can get some amazing sounds that have a rare blend of being both unusual and very usable." }
+      },
+    ],
   },
   {
     name: "Reverb+Pitch+LP",
@@ -460,15 +478,30 @@ export default [
   },
   {
     name: "Distortion",
-    categories: ["Distortion"],
+    categories: ["Distortion","Code snippet"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["-","-","-"],
     download: {
       spn: {
-        file: "dist.spn",
+        file: "spinsemi/dist.spn",
       }
     },
-    source_url: "http://spinsemi.com/programs.php"
+    source_url: "http://spinsemi.com/programs.php",
+    commentary: [
+      {
+        written_by: "Spin Semi",
+        comments: { text: `;begin distorting signal at -18dB (input referred).
+;At the output, the signal will begin to distort at half
+;of full scale, and further increase of input signal will
+;cause increasingly 'flattened' signal peaks.
+
+;This is an ideal module to be driven by a compressor,
+;where sustained notes can be on the edge of distortion,
+;and actual signal clipping can be prohibited.
+;mono in, mono out, no controls, 24 ticks`}
+      },
+    ],
   },
 
 
@@ -489,6 +522,7 @@ export default [
     name: "dattorro-shimmer_oct_var-lvl.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Shimmer","Octave","Dattorro"],
+    controls: ["Shimmer level", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-shimmer_oct_var-lvl.spn",
@@ -1270,6 +1304,7 @@ This is similar to harmonic tremolo as found in some vintage tube amps. Harmonic
     author: "Digital Larry",
     description: "Flanger using rectified-sine modulation.  LFO frequency and width are in inverse relationship from the pot to give good results over a wide frequency range with one knob.",
     categories: ["Flanger"],
+    controls: ["LFO rate/width", "Resonance", "Delay offset"],
     download: {
       spn: {
         file: "holy-city-audio/new-flanger.spn",
@@ -1547,7 +1582,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     description: "Automatic wah effect based on the signal volume. Designed for bass",
     author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
-    categories: ["Filter", "Bass"],
+    categories: ["Filter", "Bass", "Wah"],
     controls: ["Amount", "Resonance", "Frequency"],
     download: {
       spn: { file: "firesledge/bass-fv1-p4-autowah.spn", },
@@ -1571,6 +1606,12 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
       spn: { file: "firesledge/bass-fv1-p5-disto.spn", },
       spcd: { file: "firesledge/bass-fv1-p5-disto.spcd", }
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "When using with a guitar, the tone knob isn't terribly useful, but once you find a good spot for it, it really rips.  You can get some thick, meaty fuzz with this." }
+      },
+    ],
   },
   {
     name: "Filter tremolo+",
@@ -1806,9 +1847,16 @@ and shimmer code with some changes such as:
     name: "Flanger",
     author: "slacker",
     categories: ["Flanger","Phaser"],
+    controls: ["LFO speed", "Range", "Feedback (+/-)"],
     download: {
       spn: { file: "slacker-bf/bf_phaser.spn" }
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "I couldn't get this to work." }
+      },
+    ],
   },
   {
     name: "Digifuzzer",
@@ -1817,12 +1865,19 @@ and shimmer code with some changes such as:
     download: {
       spn: { file: "slacker-bf/bf_digifuzzer.spn" }
     },
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "I couldn't get this one to work." }
+      },
+    ],
   },
   {
     name: "Envelope Phaser",
     author: "David Rolo",
     author_url: "https://www.davidrolo.com/",
     categories: ["Filter", "Phaser"],
+    controls: ["Rate", "Depth", "Regen"],
     download: {
       spn: { file: "drolo/envelope-phaser.spn" }
     },
@@ -1841,6 +1896,7 @@ and shimmer code with some changes such as:
     author: "David Rolo",
     author_url: "https://www.davidrolo.com/",
     categories: ["Flanger"],
+    controls: ["Rate", "Feedback", "Range"],
     download: {
       spn: { file: "drolo/flanger.spn" }
     },
@@ -1850,6 +1906,7 @@ and shimmer code with some changes such as:
     author: "David Rolo",
     author_url: "https://www.davidrolo.com/",
     categories: ["Pitch"],
+    controls: ["Rate","Depth","Glide"],
     download: {
       spn: { file: "drolo/pitch-step-glider.spn" }
     },
@@ -2015,6 +2072,10 @@ and shimmer code with some changes such as:
       {
         written_by: "Slacker",
         comments: { text: "If anyone's interested here's a tremolo I did using pot skip routines to do Sine, rectified sine both ways so pointy or humpy :) up and down ramps, triangle, trapezoid and square. All the wave shapes are scaled to the same range. Some of the wave shapes aren't that useful it was more an exercise in generating them than an attempt at a decent trem." },
+      },
+      {
+        written_by: "Mark S.",
+        comments: { text: "I'm getting some really prominent clicking on some of the wave shapes." }
       },
     ],
   },
