@@ -60,6 +60,7 @@ export default [
   {
     name: "Tremolo",
     categories: ["Tremolo"],
+    controls: ["Reverb", "Rate", "Level"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
     download: {
@@ -1076,6 +1077,7 @@ export default [
     name: "Stereo Tremolo",
     author: "Digital Larry",
     categories: ["Tremolo"],
+    controls: ["Left speed", "Right speed", "-"],
     download: {
       spn: {
         file: "stereo-tremolo.spn",
@@ -1272,9 +1274,8 @@ In addition, the longer the chorus delay time, the less width you need to achiev
     author: "Digital Larry",
     categories: ["Tremolo"],
     download: {
-      spcd: {
-        file: "holy-city-audio/filter-tremolo-example.spcd",
-      }
+      spcd: { file: "holy-city-audio/filter-tremolo-example.spcd", },
+      spn: { file: "holy-city-audio/filter-tremolo-example.spn", },
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
     commentary: [
@@ -1537,6 +1538,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     author: "Don Stavely",
     description: "Spring reverbs sound 'boingy' because of dispersion in the spring - higher frequencies travel slower than low frequencies. A 'spectral delay filter', consisting of many (100's) of unit allpasses will produce the desired 'chirp' impulse response...",
     categories: ["Tremolo", "Reverb"],
+    controls: ["Reverb", "Rate", "Depth"],
     download: {
       spn: {
         file: "spring_verb.spn",
@@ -1851,12 +1853,6 @@ and shimmer code with some changes such as:
     download: {
       spn: { file: "slacker-bf/bf_geoffrey.spn" }
     },
-    commentary: [
-      {
-        written_by: "Mark S.",
-        comments: { text: "I couldn't get this to work." }
-      },
-    ],
   },
   {
     name: "New octaver",
@@ -1874,12 +1870,6 @@ and shimmer code with some changes such as:
     download: {
       spn: { file: "slacker-bf/bf_phaser.spn" }
     },
-    commentary: [
-      {
-        written_by: "Mark S.",
-        comments: { text: "I couldn't get this to work." }
-      },
-    ],
   },
   {
     name: "Digifuzzer",
@@ -1888,12 +1878,6 @@ and shimmer code with some changes such as:
     download: {
       spn: { file: "slacker-bf/bf_digifuzzer.spn" }
     },
-    commentary: [
-      {
-        written_by: "Mark S.",
-        comments: { text: "I couldn't get this one to work." }
-      },
-    ],
   },
   {
     name: "Envelope Phaser",
