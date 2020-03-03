@@ -16,6 +16,7 @@ export default [
     categories: ["Delay"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb level", "Delay", "Echo level"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_ECHO_RPT.spn" },
     },
@@ -27,6 +28,7 @@ export default [
     categories: ["Delay"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb level", "Delay", "Echo level"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_ECHO.spn" },
     },
