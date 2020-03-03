@@ -21,7 +21,7 @@ ldax pot0      ;sets LFO speed
 mulx pot0      ;multiply it by its self a few time to get a nicer taper, needs work
 mulx pot0
 sof 175/511,0.2/511   ;set minimum and maximum rates
-wrax sin0_rate,1      ;write to sin0 rate   
+wrax sin0_rate,1      ;write to sin0 rate
 cho rdal,sin0      ;get sin0 value
 
 skp   gez,play      ; If ACC is >=0 we are in playback mode so jump to play
@@ -51,7 +51,7 @@ wrax division,0   ;write to division register
 ldax   adcl      ;Read in ADC left
 wra   del,1      ; Write to delay line
 wrax   dacl,1      ;and to dacl
-wrax   dacr,0     ;and to dacr   
+wrax   dacr,0     ;and to dacr
 skp   zro, end      ;Jump to end
 
 ; Play back mode
@@ -65,4 +65,6 @@ wrax addr_ptr,0   ;write to address pointer
 rmpa 1      ;read from delay position set by addresss pointer
 wra del,1   ;write to head of delay
 wrax   dacl,1    ;Write it to dacl
-wrax   dacr,0      ;Write it to dacr 
+wrax   dacr,0      ;Write it to dacr
+
+end:
