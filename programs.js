@@ -1880,8 +1880,18 @@ and shimmer code with some changes such as:
     name: "Digifuzzer",
     author: "slacker",
     categories: ["Distortion"],
+    controls: ["Sample rate reduction", "Bit depth + distortion", "Volume"],
     download: {
       spn: { file: "slacker-bf/bf_digifuzzer.spn" }
+    },
+  },
+  {
+    name: "Johnny",
+    author: "slacker",
+    categories: ["Uncategorized"],
+    controls: ["LFO Speed", "Max delay", "Randomness"],
+    download: {
+      spn: { file: "slacker-bf/bf_johnny.spn" }
     },
   },
   {
