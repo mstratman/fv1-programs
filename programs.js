@@ -262,6 +262,7 @@ export default [
     categories: ["Reverb"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Pre-delay", "Reverb time", "Damping"],
     download: {
       spn: { file: "spinsemi/3K_V1_0_Hall.spn", },
     },
@@ -273,6 +274,7 @@ export default [
     categories: ["Reverb"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Pre-delay", "Reverb time", "Damping"],
     download: {
       spn: { file: "spinsemi/3K_V1_1_Room.spn" },
     },
@@ -283,6 +285,7 @@ export default [
     categories: ["Reverb"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Pre-delay", "Reverb time", "Damping"],
     download: {
       spn: { file: "spinsemi/3K_V1_2_PLATE.spn" },
     },
@@ -294,6 +297,7 @@ export default [
     categories: ["Reverb"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Pre-delay", "Gate time", "Damping"],
     download: {
       spn: { file: "spinsemi/3K_V1_3_GATED.spn" },
     },
@@ -305,6 +309,7 @@ export default [
     categories: ["Reverb", "Delay"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Delay", "Repeat", "Reverb"],
     download: {
       spn: { file: "spinsemi/3K_V1_4_ECHO-REV.spn" },
     },
