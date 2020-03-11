@@ -88,6 +88,7 @@ export default [
     categories: ["Wah"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb", "Sensitivity", "Filter Q / Level"],
     download: {
       spn: { file: "spinsemi/GA_DEMO_WAH.spn" },
     },
@@ -334,6 +335,7 @@ export default [
     categories: ["Reverb","Chorus"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Chorus width", "Sweep rate", "Reverb"],
     download: {
       spn: { file: "spinsemi/3K_V1_6_CHOR-REV.spn" },
     },
@@ -345,6 +347,7 @@ export default [
     categories: ["Flanger"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Delay", "Sweep rate", "Sweep width"],
     download: {
       spn: { file: "spinsemi/3K_V1_7_FLANGE.spn", },
     },
@@ -402,6 +405,7 @@ export default [
     categories: ["Chorus","Reverb"],
     author: "Spin Semi",
     author_url: "http://spinsemi.com/",
+    controls: ["Reverb mix", "Rate", "Mix + Width"],
     download: {
       spn: { file: "spinsemi/rom_chor_rev.spn", },
     },
@@ -529,9 +533,10 @@ export default [
         file: "dervish/dual-lfo-chorus.spn"
       }
     },
+    controls: ["Rate 1", "Rate 2", "Depth"],
     author: "Graham Biswell",
     source_url: "https://www.muffwiggler.com/forum/viewtopic.php?t=160436",
-    description: "Chorus with Rate and Depth controls and sounds just like a normal chorus but adds in the 2nd rate control to spook things up a bit",
+    description: "Chorus with Rate and Depth controls and sounds just like a normal chorus but adds in the 2nd rate control to spook things up a bit. Rate 2 completely CCW turns it off.",
   },
   {
     name: "dattorro-shimmer_oct_var-lvl.spn",
@@ -1203,6 +1208,7 @@ export default [
     description: "Rate and Depth controls and sounds just like a normal chorus but adds in the 2nd rate control to spook things up a bit",
     author: "ice-nine",
     categories: ["Chorus"],
+    controls: ["Chorus level", "Rate 1", "Rate 2"],
     download: {
       spn: {
         file: "chorus-dual-rate.spn",
@@ -1855,6 +1861,7 @@ and shimmer code with some changes such as:
   {
     name: "Geoffrey: Pitch shifted delay",
     author: "slacker",
+    description: "Pitch shift is +M3rd, +5th, +7th, +1 Octave",
     categories: ["Pitch", "Delay"],
     controls: ["Delay", "Pitch select", "Feedback"],
     download: {
@@ -1865,6 +1872,7 @@ and shimmer code with some changes such as:
     name: "New octaver",
     author: "slacker",
     categories: ["Uncategorized"],
+    controls: ["Dry mix", "Octave up", "Octave down"],
     download: {
       spn: { file: "slacker-bf/bf_newoctaver.spn" }
     },
@@ -1873,7 +1881,7 @@ and shimmer code with some changes such as:
     name: "Flanger",
     author: "slacker",
     categories: ["Flanger","Phaser"],
-    controls: ["LFO speed", "Range", "Feedback (+/-)"],
+    controls: ["Feedback (+/-)", "Range", "Speed"],
     download: {
       spn: { file: "slacker-bf/bf_phaser.spn" }
     },
@@ -1891,7 +1899,7 @@ and shimmer code with some changes such as:
     name: "Johnny",
     author: "slacker",
     categories: ["Uncategorized"],
-    controls: ["LFO Speed", "Max delay", "Randomness"],
+    controls: ["Speed", "Max delay", "Randomness"],
     download: {
       spn: { file: "slacker-bf/bf_johnny.spn" }
     },
