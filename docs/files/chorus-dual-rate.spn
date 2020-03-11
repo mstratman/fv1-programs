@@ -18,7 +18,7 @@ skp 	run,	START
 wlds 	SIN0,	0,800	;alter the 800 and 1200 valuea to adjust the amount of
 wlds	SIN1,	0,1200	;pitch bend lower number = shorter freq span.
 
-START&#58;
+START:
 
 ;sum inputs to mono
 
