@@ -97,7 +97,7 @@ Or rather, here are the notable files you're most likely to be looking for:
 
 ``` bash
 # install dependencies
-$ npm run install
+$ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
