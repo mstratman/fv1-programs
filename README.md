@@ -97,13 +97,24 @@ Or rather, here are the notable files you're most likely to be looking for:
 
 ``` bash
 # install dependencies
-$ npm install
+npm install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+npm run dev
 
 # generate static project
-$ npm run generate
+npm run generate
+```
+
+Upgrading:
+
+```bash
+npm install -g npm-check-updates # FIRST TIME ONLY
+ncu
+ncu -u
+npm install
+
+# Now TEST that everything still works correctly
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
