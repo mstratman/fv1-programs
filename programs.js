@@ -1344,7 +1344,6 @@ This is similar to harmonic tremolo as found in some vintage tube amps. Harmonic
   {
     name: "Oil can delay",
     author: "Digital Larry",
-    description: "Flanger using rectified-sine modulation.  LFO frequency and width are in inverse relationship from the pot to give good results over a wide frequency range with one knob.",
     categories: ["Delay"],
     download: {
       spn: {
@@ -2110,6 +2109,26 @@ and shimmer code with some changes such as:
       {
         written_by: "Mark S.",
         comments: { text: "I'm getting some really prominent clicking on some of the wave shapes." }
+      },
+    ],
+  },
+  {
+    name: "Tremolo w/ Multiple LFO Waveshapes (no clicks)",
+    author: "Slacker, mstratman",
+    categories: ["Tremolo"],
+    download: {
+      spn: { file: "tremolo-shapes-reduced.spn" },
+    },
+    controls: ["Wave shape", "Depth", "Speed"],
+    source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=3&t=516",
+    commentary: [
+      {
+        written_by: "Mark S.",
+        comments: { text: "This is a version of slacker's tremolo that removes 2 wave shapes that were giving clicky sounds.  It features: sine, hump, hyper-triangle, triangle, trapezoid, square" }
+      },
+      {
+        written_by: "Slacker",
+        comments: { text: "If anyone's interested here's a tremolo I did using pot skip routines to do Sine, rectified sine both ways so pointy or humpy :) up and down ramps, triangle, trapezoid and square. All the wave shapes are scaled to the same range. Some of the wave shapes aren't that useful it was more an exercise in generating them than an attempt at a decent trem." },
       },
     ],
   },
