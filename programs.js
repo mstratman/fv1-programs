@@ -209,6 +209,7 @@ export default [
     name: "Reverb+HP+LP",
     description: "Reverb plus 2-pole high-pass and 2-pole low-pass",
     categories: ["Reverb","Filter"],
+    controls: ["Reverb", "High Pass Filter", "Low Pass Filter"],
     author: "Dave Spinkler",
     download: {
       spn: { file: "spinsemi/dance_ir_h_l.spn" },
@@ -465,6 +466,8 @@ export default [
   {
     name: "Plate Reverb: Very Tight",
     categories: ["Reverb"],
+    controls: ["Reverb time", "Low freq loss", "High freq loss"],
+    description: "Very tight, characterized by extreme density, slight tinnyness, explosive initial sound",
     author: "Harmon Grold",
     download: {
       spn: {
@@ -475,7 +478,9 @@ export default [
   },
   {
     name: "Plate Reverb: Tight",
+    description: "Tight, characterized by very high density, slight tinnyness, explosive initial sound",
     categories: ["Reverb"],
+    controls: ["Reverb time", "Low freq loss", "High freq loss"],
     author: "Harmon Grold",
     download: {
       spn: {
@@ -486,7 +491,9 @@ export default [
   },
   {
     name: "Plate Reverb",
+    description: "Lush (large), characterized by very high density, explosive initial sound, large",
     categories: ["Reverb"],
+    controls: ["Reverb time", "Low freq loss", "High freq loss"],
     author: "Harmon Grold",
     download: {
       spn: {
@@ -675,6 +682,7 @@ export default [
     name: "dattorro-shimmer_val-lvl.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Shimmer"],
+    controls: ["Shimmer", "Reverb time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-shimmer/dattorro-shimmer_val-lvl.spn",
@@ -996,6 +1004,7 @@ export default [
   {
     name: "Plate Reverb - Dattorro",
     categories: ["Reverb", "Dattorro"],
+    controls: ["Reverb level", "Reverb time", "Damping"],
     download: {
       spn: {
         file: "dattorro.spn",
@@ -1048,6 +1057,7 @@ export default [
     name: "Reverse Reverb",
     author: "Malekko",
     categories: ["Reverb"],
+    controls: ["Pre-delay", "Decay time", "Damping"],
     download: {
       spn: {
         file: "RevRev.spn"
@@ -1058,6 +1068,7 @@ export default [
     name: "Hall Reverb w/ Shimmer",
     author: "Sweetalk",
     categories: ["Reverb", "Shimmer"],
+    controls: ["Damping", "Feedback", "Decay"],
     download: {
       spn: {
         file: "shimmer-1.spn"
@@ -1067,6 +1078,7 @@ export default [
   {
     name: "New Shimmer Reverb",
     categories: ["Reverb", "Shimmer"],
+    controls: ["Shimmer", "Reverb level", "Reverb time"],
     download: {
       spn: {
         file: "shimmer-2.spn"
@@ -1422,6 +1434,7 @@ Pot2 = feedback` }
   {
     name: "Shimmer",
     author: "Digital Larry",
+    controls: ["Level", "Filter", "Time"],
     categories: ["Reverb", "Shimmer"],
     download: {
       spcd: { file: "holy-city-audio/shimmer.spcd", },
@@ -1805,6 +1818,7 @@ This one sounds very nice.  Laughing
     author: "Alex Lawrow",
     description: "This routine is based on Mick Taylor's (Ice-9s) reverb loop and shimmer code with some changes such as...",
     categories: ["Pitch"],
+    controls: ["Reverb time", "Treble", "Shimmer"],
     download: {
       spn: { file: "shimmer_drAlx.spn" }
     },
