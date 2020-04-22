@@ -253,12 +253,6 @@ export default [
     },
     application: "Mixer",
     source_url: "http://spinsemi.com/programs.php",
-    commentary: [
-      {
-        written_by: "Mark S.",
-        comments: { text: "I'm struggling to get this to compile. Possibly a stray bad character somewhere?" }
-      },
-    ],
   },
 
   {
@@ -561,6 +555,7 @@ export default [
     name: "dattorro-var_filter-var_damping.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Filter", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_filter-var_damping.spn",
@@ -572,6 +567,7 @@ export default [
     name: "dattorro-var_filter-var_predelay.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Pre-delay", "Time", "Filter"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_filter-var_predelay.spn",
@@ -583,6 +579,7 @@ export default [
     name: "dattorro-var_predelay-var_damping-1k.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Pre-delay", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_predelay-var_damping-1k.spn",
@@ -594,6 +591,7 @@ export default [
     name: "dattorro-var_predelay-var_damping-2k.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Pre-delay", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_predelay-var_damping-2k.spn",
@@ -605,6 +603,7 @@ export default [
     name: "dattorro-var_predelay-var_damping-4k.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Pre-delay", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_predelay-var_damping-4k.spn",
@@ -616,6 +615,7 @@ export default [
     name: "dattorro-var_predelay-var_damping-8k.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Pre-delay", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_predelay-var_damping-8k.spn",
@@ -627,6 +627,7 @@ export default [
     name: "dattorro-var_predelay-var_damping-500.spn",
     description: "Dattorro Mix Reverb",
     categories: ["Reverb","Dattorro"],
+    controls: ["Pre-delay", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro-var_predelay-var_damping-500.spn",
@@ -638,6 +639,7 @@ export default [
     name: "dattorro_1oct_pitch-ip+fb-2k.spn",
     description: "Dattorro reverb with fixed 1oct frequency pitch shift",
     categories: ["Reverb","Dattorro","Octave","Pitch"],
+    controls: ["Shift level", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro_1oct_pitch-ip+fb-2k.spn",
@@ -660,6 +662,7 @@ export default [
     name: "dattorro_var_pitch-ip+fb-4k.spn",
     description: "Dattorro reverb with variable frequency pitch shift applied to input signal and feedback",
     categories: ["Reverb","Dattorro","Pitch"],
+    controls: ["Frequency shift", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro_var_pitch-ip+fb-4k.spn",
@@ -671,6 +674,7 @@ export default [
     name: "dattorro_var_pitch-ip-4k.spn",
     description: "Dattorro reverb with variable frequency pitch shift applied to input signal",
     categories: ["Reverb","Dattorro","Pitch"],
+    controls: ["Frequency shift", "Time", "Damping"],
     download: {
       spn: {
         file: "dervish/dattorro-mixed/dattorro_var_pitch-ip-4k.spn",
@@ -726,6 +730,7 @@ export default [
   {
     name: "Single Head Tape Echo + Spring Reverb w/ Ping Pong",
     description: "Not very tape echo like, really",
+    controls: ["Time", "Feedback", "Level"],
     categories: ["Reverb","Delay"],
     download: {
       spn: {
@@ -738,6 +743,7 @@ export default [
     name: "Dual Head Tape Echo + Spring Reverb w/ Ping Pong",
     description: "Not very tape echo like, really",
     categories: ["Reverb","Delay"],
+    controls: ["Time", "Feedback", "Level"],
     download: {
       spn: {
         file: "dervish/drv102/dv102-pp-2head-reverb.spn"
@@ -770,6 +776,7 @@ export default [
   {
     name: "Ping Pong",
     categories: ["Delay"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/drv103/dv103-1head-pp.spn",
@@ -780,6 +787,7 @@ export default [
   {
     name: "Ping Pong 2:1",
     categories: ["Delay"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/drv103/dv103-1head-pp-2_1.spn",
@@ -791,6 +799,7 @@ export default [
     name: "Dual Head Tape Echo + Reverb, w/ Ping Pong",
     description: "reverb code is a 2 tap version of the Spin OEM1 Vocal Plate",
     categories: ["Delay", "Reverb"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/drv103/dv103-1head-pp-2_1-4xreverb.spn",
@@ -802,6 +811,7 @@ export default [
     name: "Dual Head Tape Echo + Reverb",
     description: "reverb code is a 2 tap version of the Spin OEM1 Vocal Plate",
     categories: ["Delay", "Reverb"],
+    controls: ["Delay time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/drv103/dv103-2head-2_1-reverb.spn",
@@ -852,6 +862,7 @@ export default [
     description: "Basic pingpong with adjustable feedback & damping ; damping has hpf & lpf ; some added wonkiness",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/pingpong/pp-basic-wonky.spn",
@@ -935,6 +946,7 @@ export default [
     name: "Triple Tap Cascaded Delay",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/triple/tripple_echo_cascaded.spn",
@@ -946,6 +958,7 @@ export default [
     name: "Triple Tap Cascaded Delay - Stereo",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/triple/tripple_echo_cascaded_stereo.spn",
@@ -957,6 +970,7 @@ export default [
     name: "Triple Tap Cascaded Delay - Stereo w/ Chorus",
     author: "Graham Biswell",
     categories: ["Delay", "Chorus"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/triple/tripple_echo_cascaded_stereo+chorus.spn",
@@ -969,6 +983,7 @@ export default [
     description: "taps are treated in parallel ; feedback & damping are fixed",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/triple/tripple_echo_parallel.spn",
@@ -981,6 +996,7 @@ export default [
     description: "taps are treated in parallel ; feedback & damping are fixed, but f/b varies slighly depending on delay time (longer time, less f/b) ; damping for each tap is different",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/triple/tripple_echo-var_fb.spn",
@@ -993,6 +1009,7 @@ export default [
     description: "taps are treated in parallel ; feedback & damping are fixed, but f/b varies slighly depending on delay time (longer time, less f/b) ; damping for each tap is different; With chorus",
     author: "Graham Biswell",
     categories: ["Delay", "Chorus"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/triple/tripple_echo-var_fb+chorus.spn",
@@ -1125,6 +1142,7 @@ export default [
     name: "Triple Delay w/ Feedback",
     author: "Digital Larry",
     categories: ["Delay"],
+    controls: ["Time 1", "Times 2 & 3", "Feedback"],
     download: {
       spn: {
         file: "triple-delay-feedback.spn",
@@ -1142,6 +1160,7 @@ export default [
     name: "Stereo Dual Flange Multi Tap Delay",
     author: "Digital Larry",
     categories: ["Delay","Flanger"],
+    controls: ["Feedback", "Resonance and time", "Return level"],
     download: {
       spn: {
         file: "stereo-dual-flange-multi-tap-delay.spn",
@@ -1708,6 +1727,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     description: "Simplified part of A+ Paradox delay",
     author: "igore pie",
     author_url: "mailto:igor@shift-line.com",
+    controls: ["-", "Delay", "Feedback"],
     categories: ["Delay"],
     download: {
       spn: { file: "afx_reverse_delay.spn" }
@@ -1718,6 +1738,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     name: "Aliaser",
     author: "Frank Thomson, OCT Distribution",
     categories: ["Aliaser"],
+    controls: ["Sample rate", "-", "-"],
     download: {
       spn: { file: "aliaser.spn" }
     },
@@ -1799,6 +1820,7 @@ This one sounds very nice.  Laughing
     name: "Reverse delay",
     author: "Knut Helle",
     categories: ["Delay"],
+    controls: ["Length", "-", "-"],
     download: {
       spn: { file: "reverse_delay.spn" }
     },
@@ -1845,7 +1867,7 @@ and shimmer code with some changes such as:
     ],
   },
   {
-    name: "Slocum Phase shifter",
+    name: "Slocum Phase Shifter",
     description: "From GA_DEMO - mods by Doug Slocum 10/20/2017",
     author: "Doug Slocum, Spin Semi",
     categories: ["Phase"],
@@ -1994,15 +2016,10 @@ and shimmer code with some changes such as:
   {
     name: "Resonator",
     categories: ["Uncategorized"],
+    controls: ["Frequency", "Resonance", "-"],
     download: {
       spn: { file: "resonator.spn" }
     },
-    commentary: [
-      {
-        written_by: "Mark S.",
-        comments: { text: "I didn't get this to work." },
-      },
-    ],
   },
   {
     name: "BM Pi",
@@ -2084,6 +2101,7 @@ and shimmer code with some changes such as:
     name: "Slow Gear",
     author: "patb, Don Stavely",
     categories: ["Uncategorized"],
+    controls: ["Attack rate", "-", "-"],
     download: {
       spn: { file: "slowgear-2.spn" },
     },
