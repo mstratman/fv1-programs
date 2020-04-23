@@ -1708,7 +1708,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
   {
     name: "8 second delay",
     description: "This delays an input by eight seconds. It inteleaves the signal 8 ways in a single max sized delay",
-    author: "sebxx4",
+    author: "Don Stavely",
     categories: ["Delay", "Code snippet"],
     download: {
       spn: { file: "8_seconds_delay.spn" }
