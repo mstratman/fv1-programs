@@ -16,7 +16,7 @@
       </div>
 
       <h2>Circuit / PCB</h2>
-      <p>Unless otherwise noted, all of these programs are assumed to work on the <a target="_blank" href="images/fv1-typical-application.png">"typical application"</a> circuit from the <a target="_blank" href="http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf">FV-1 datasheet</a>, and should also run fine on either the <strong><a target="_blank" href="pedal/">FV-1 platform pedal</a></strong>, or the <a target="_blank" href="https://www.pedalpcb.com/product/arachnid/">Arachnid board from PedalPCB</a>.</p>
+      <p>Unless otherwise noted, all of these programs are assumed to work on the <a target="_blank" href="images/fv1-typical-application.png">"typical application"</a> circuit from the <a target="_blank" href="http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf">FV-1 datasheet</a>, and should also run fine on either the <strong><a target="_blank" href="https://mas-effects.com"><strong>Mimir's Well:</strong> FV-1 platform pedal</a></strong>, or the <a target="_blank" href="https://www.pedalpcb.com/product/arachnid/">Arachnid board from PedalPCB</a>.</p>
       <!--
       <div class="center-buttons">
         <a class="button" target="_blank" href="pedal/">Get Platform Pedal</a>

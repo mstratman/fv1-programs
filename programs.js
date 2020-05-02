@@ -875,6 +875,7 @@ export default [
     description: "Basic pingpong with adjustable feedback & damping ; damping has hpf & lpf",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time", "Feedback", "Damping"],
     download: {
       spn: {
         file: "dervish/pingpong/pp-basic.spn",
