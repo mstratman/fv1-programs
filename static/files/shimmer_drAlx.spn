@@ -66,11 +66,11 @@ end_init:
 ; As POT0 goes from 0 to 1, try to make T increase linearly from 0s to 10s.
 ;      krt = 0.001 ^ ( 0.07427 / ( 0.001 + 10 * POT0 ) ), 	Eq(2)
 ;
-; POT0   RT60(s)   krt    
+; POT0   RT60(s)   krt
 ; 0         0.001     0.00
 ; 1.0      10.00     0.95
 ;
-; Eq(2) would be a nightmare to implement, so use this approximation 
+; Eq(2) would be a nightmare to implement, so use this approximation
 ;    krt = 0.95 * POT0 ^ ( 0.185 * ( 1 - POT0 ) )		Eq(3)
 
 RDAX	POT0,1		; Read POT0 (full sweep is 0 to 1)
@@ -79,7 +79,7 @@ WRAX 	temp,0
 RDAX	POT0,1
 LOG	1,0
 MULX	temp
-EXP	0.95,0  
+EXP	0.95,0
 WRAX 	krt,0		; krt = 0.95 * POT0 ^ ( 0.185 * ( 1 - POT0 ) )
 
 ; Map POT1 to control the shelving LPFs in the reverb loop
@@ -92,13 +92,13 @@ WRAX	kd,0			; kd = -0.5 to 0 (i.e. clockwise to increase treble)
 ; Next half turn increases dry signal into the octaveup (from a factor of 0 to 1)
 SOF	0,0.2
 WRAX	octave_rev,0		; Set default octave_rev to maximum (0.2)
-RDAX 	POT2,1			; Read POT2 (full sweep is 0 to 1)	
+RDAX 	POT2,1			; Read POT2 (full sweep is 0 to 1)
 SOF	1,-0.5			; ACC = -0.5 to 0.5
 SKP	gez,set_octave_dry	; If >=0, set octave_dry, else overwrite default octave_rev and zero octave_dry
 SOF	-2,0			; ACC = (1-x)  where x increases 0 to 1
-WRAX 	temp,1			
-MULX 	temp			; ACC = (1-x)^2 			
-MULX 	temp			; ACC = (1-x)^3 
+WRAX 	temp,1
+MULX 	temp			; ACC = (1-x)^2
+MULX 	temp			; ACC = (1-x)^3
 MULX 	temp			; ACC = (1-x)^4
 SOF	-0.2,0.2			; ACC = 0.2 -  0.2 * (1-x)^4
 WRAX	octave_rev,0		; Write to octave_rev, then clear ACC to zero octave_dry
@@ -117,8 +117,8 @@ WRAX	dry,1			; Write to dry
 
 ;----------- Make input signal for octave up ----------
 MULX	octave_dry		; ACC already contains dry
-WRAX	temp,0			; temp = dry * octave_dry		 
-RDAX	rev_out,1	
+WRAX	temp,0			; temp = dry * octave_dry
+RDAX	rev_out,1
 MULX	octave_rev
 RDAX	temp,1			; ACC = dry * octave_dry  + rev_out * octave_rev
 ;-------------------------------------------------
@@ -168,23 +168,23 @@ MULX	krt		; Scale by krt
 RDAX	apout,0.5	; Inject 0.5 * apout
 RDA	lap1a#,0.5	; 1st loop AP filter before d1
 WRAP	lap1a,-0.5	; ...
-RDA	lap1b#,0.5	; 2nd loop AP filter before d1 
+RDA	lap1b#,0.5	; 2nd loop AP filter before d1
 WRAP	lap1b,-0.5	; ...
 
 ;Adjustable shelved LPF (DC Gain = 1, Corner = 2700 Hz)
 WRAX	temp,1		; Save input
 RDFX	lp1,0.404	; 0.404 = 1 - exp(-2*pi*2700/32768)
-WRHX	lp1,-1		; 
+WRHX	lp1,-1		;
 MULX	kd		; Multiply by damping coefficient
 RDAX	temp,1		; Add back input
 
-;Shelved HPF (DC Gain = 0.5, Corner = 53 Hz)      
+;Shelved HPF (DC Gain = 0.5, Corner = 53 Hz)
 RDFX	hp1,0.01		; 0.01 = 1 - exp(-2*pi*53/32768)
 WRHX	hp1,-0.5		; -0.5 = DC Gain - 1
 WRA	d1,0		; Write to start of d1
 
 RDA	d1#,1		; Read from end of d1
-MULX	krt		; Scale by krt	
+MULX	krt		; Scale by krt
 RDAX	apout,0.5	; Inject 0.5 * apout
 RDA	lap2a#,0.5	; 1st loop AP filter before d2
 WRAP	lap2a,-0.5	; ...
@@ -194,11 +194,11 @@ WRAP	lap2b,-0.5	; ...
 ;Adjustable shelved LPF (DC Gain = 1, Corner = 2700 Hz)
 WRAX	temp,1		; Save input
 RDFX	lp2,0.404	; 0.404 = 1 - exp(-2*pi*2700/32768)
-WRHX	lp2,-1		; 
-MULX	kd		; Multiply by damping coefficient	
+WRHX	lp2,-1		;
+MULX	kd		; Multiply by damping coefficient
 RDAX	temp,1		; Add back input
 
-;Shelved HPF (DC Gain = 0.5, Corner = 53 Hz)    	
+;Shelved HPF (DC Gain = 0.5, Corner = 53 Hz)
 RDFX	hp2,0.01		; 0.01 = 1 - exp(-2*pi*53/32768)
 WRHX	hp2,-0.5		; -0.5 = DC Gain - 1
 WRA	d2,0		; Write to start of d2
@@ -225,4 +225,3 @@ WRAX	rev_out,1		; Save reverb output to register
 
 ;RDAX	dry,1		; Add dry signal
 WRAX	DACL,0
-Top
