@@ -1696,7 +1696,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
   {
     name: "Starfield+",
     description: "Harmonic tremolo mixed with a delay. Based on Madbeanpedals Starfield.",
-    author: "Firesledge, madbeanpedals",
+    author: "Firesledge",
     author_url: "http://ldesoras.free.fr/",
     categories: ["Delay", "Tremolo", "Bass"],
     controls: ["Delay", "Speed + Delay/Tremolo mix", "Dry/wet mix"],
@@ -1728,7 +1728,7 @@ P2 sets the sinewave tremolo speed from 0 - slow - fast. This gets really intere
     description: "Simplified part of A+ Paradox delay",
     author: "igore pie",
     author_url: "mailto:igor@shift-line.com",
-    controls: ["-", "Delay", "Feedback"],
+    controls: ["-", "Feedback", "Delay"],
     categories: ["Delay"],
     download: {
       spn: { file: "afx_reverse_delay.spn" }
@@ -1897,7 +1897,7 @@ and shimmer code with some changes such as:
   {
     name: "Geoffrey: Pitch shifted delay",
     author: "slacker",
-    description: "Pitch shift is +M3rd, +5th, +7th, +1 Octave",
+    description: "Pitch shift is +5th, +7th, +1 Octave, +M3rd",
     categories: ["Pitch", "Delay"],
     controls: ["Delay", "Pitch select", "Feedback"],
     download: {
@@ -1914,7 +1914,7 @@ and shimmer code with some changes such as:
     },
   },
   {
-    name: "Flanger",
+    name: "Phaser",
     author: "slacker",
     categories: ["Flanger","Phaser"],
     controls: ["Feedback (+/-)", "Range", "Speed"],
