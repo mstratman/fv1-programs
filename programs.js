@@ -1955,6 +1955,7 @@ and shimmer code with some changes such as:
     author: "David Rolo",
     author_url: "https://www.davidrolo.com/",
     categories: ["Filter"],
+    controls: ["Sensitivity", "Filter Type", "Volume"],
     download: {
       spn: { file: "drolo/filter-env-LP-HP-up.spn" }
     },
