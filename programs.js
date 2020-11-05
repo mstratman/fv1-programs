@@ -899,6 +899,7 @@ export default [
     name: "Ping Pong with Dual Taps",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time 1", "Time 2", "Feedback"],
     download: {
       spn: {
         file: "dervish/pingpong/pp-dubble.spn",
@@ -935,6 +936,7 @@ export default [
     description: "Ping pong delay with 3 taps - left, right, centre ; centre is mixed with both left & right taps",
     author: "Graham Biswell",
     categories: ["Delay"],
+    controls: ["Time 1", "Time 2", "Time 3"],
     download: {
       spn: {
         file: "dervish/pingpong/pp-tripple.spn",
@@ -1216,6 +1218,7 @@ export default [
     description: "Sounds like a phaser but in fact it is not one, strictly speaking. It is built up from resonant high pass and low pass filters mixed together",
     author: "Digital Larry",
     categories: ["Phaser"],
+    controls: ["Speed and Width", "Time", "Level and Feedback"],
     download: {
       spn: {
         file: "faux-phaser.spn",
@@ -1228,6 +1231,7 @@ export default [
     description: "Sounds like a phaser but in fact it is not one, strictly speaking. It is built up from resonant high pass and low pass filters mixed together. Adds another delay to the resonant low pass",
     author: "Digital Larry",
     categories: ["Phaser"],
+    controls: ["Speed and Width", "Time", "Level and Feedback"],
     download: {
       spn: {
         file: "faux-phaser-2.spn",
