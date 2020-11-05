@@ -1313,6 +1313,9 @@ In addition, the longer the chorus delay time, the less width you need to achiev
     download: {
       spbk: {
         file: "holy-city-audio/demo-delays.spbk",
+      },
+      spn: {
+        file: "holy-city-audio/demo-delays-spinasm.zip",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
@@ -1349,6 +1352,9 @@ This is similar to harmonic tremolo as found in some vintage tube amps. Harmonic
     download: {
       spbk: {
         file: "holy-city-audio/flangers.spbk",
+      },
+      spn: {
+        file: "holy-city-audio/flangers-spinasm.zip",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
@@ -1360,6 +1366,9 @@ This is similar to harmonic tremolo as found in some vintage tube amps. Harmonic
     download: {
       spbk: {
         file: "holy-city-audio/multi-tap-delays.spbk",
+      },
+      spn: {
+        file: "holy-city-audio/multi-tap-delays-spinasm.zip",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
@@ -1473,6 +1482,9 @@ Pot2 = feedback` }
     download: {
       spbk: {
         file: "holy-city-audio/through-zero-flangers-demo.spbk",
+      },
+      spn: {
+        file: "holy-city-audio/through-zero-flangers-demo-spinasm.zip",
       }
     },
     source_url: "https://www.diystompboxes.com/smfforum/index.php?topic=123725.0",
