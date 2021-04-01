@@ -1545,6 +1545,10 @@ Change the Frequency and Resonant peak settings in the SVF 2P block for differen
         written_by: "Mark S.",
         comments: { text: "I wasn't able to get this to work. Neither with the spn nor the spcd. Haven't done any investigation yet, though" },
       },
+      {
+        written_by: "Mark S.",
+        comments: { text: "I fixed this by replacing the SVF 2P block with an updated one. Perhaps they used a much older version of SpinCAD?" },
+      },
     ],
   },
   {
