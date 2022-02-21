@@ -130,6 +130,7 @@ export default [
       spn: { file: "spinsemi/min_rev1.spn" },
     },
     application: "Code snippet",
+    controls: ["-", "-", "-"],
     source_url: "http://spinsemi.com/programs.php"
   },
   {
@@ -2102,14 +2103,6 @@ and shimmer code with some changes such as:
   `},
       },
     ],
-  },
-  {
-    name: "Minimal Reverb - no controls",
-    categories: ["Reverb", "Code snippet"],
-    download: {
-      spn: { file: "min_rev1.spn" },
-    },
-    controls: ["-", "-", "-"],
   },
   {
     name: "7-Band Parametric EQ",
