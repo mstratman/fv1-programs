@@ -1889,6 +1889,26 @@ and shimmer code with some changes such as:
     ],
   },
   {
+    name: "Ionian",
+    author: "Alex Lawrow",
+    description: "Produces a major scale (Ionian mode) based on on whatever note you play into the input.",
+    categories: ["Pitch"],
+    controls: ["Volume", "Speed", "Number of notes (2 to 8)"],
+    download: {
+      spn: { file: "IONIAN.spn" }
+    },
+  },
+  {
+    name: "Arpeggio",
+    author: "Alex Lawrow",
+    description: "Produces a major chord arpeggio based on the root note you play into the input.",
+    categories: ["Pitch"],
+    controls: ["Volume", "Speed", "Number of notes (2 to 4)"],
+    download: {
+      spn: { file: "ARPEGGIO.spn" }
+    },
+  },
+  {
     name: "Slocum Phase Shifter",
     description: "From GA_DEMO - mods by Doug Slocum 10/20/2017",
     author: "Doug Slocum, Spin Semi",
