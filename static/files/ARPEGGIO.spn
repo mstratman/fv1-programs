@@ -18,25 +18,16 @@
 ; POT2 = Number of notes in arpeggio.
 ;        Min = (Tonic -> Major Third)
 ;        Max = (Tonic -> Major Third -> Perfect Fifth -> Octave)
- 
+
 
 ; 7 delay lines.  One after each pitch shifter
-MEM Line0 2337  ; Delay line 
-MEM Line1 2337  ; Delay line 
-MEM Line2 2337  ; Delay line 
-MEM Line3 2337  ; Delay line  
-MEM Line4 2337  ; Delay line  
-MEM Line5 2337  ; Delay line  
-MEM Line6 2337  ; Delay line    
-
-; The memory addresses of the 7 delay lines
-EQU Line0addr     0
-EQU Line1addr  2338
-EQU Line2addr  4676
-EQU Line3addr  7014
-EQU Line4addr  9352
-EQU Line5addr 11690
-EQU Line6addr 14028
+MEM Line0 2338
+MEM Line1 2338
+MEM Line2 2338
+MEM Line3 2338
+MEM Line4 2338
+MEM Line5 2338
+MEM Line6 2338
 
 ; 7 pitch shifters.  Named after the note at the **input** of each shifter
 MEM Note0 2048
@@ -46,7 +37,7 @@ MEM Note3 2048
 MEM Note4 2048
 MEM Note5 2048
 MEM Note6 2048
-MEM	tmp   1         ; Temp memory for pitch shifters
+MEM tmp   1         ; Temp memory for pitch shifters
 
 ; Because of the way the notes are generated, the time gap between
 ; the fifth and the octave is larger than the time gap
@@ -64,14 +55,14 @@ EQU Note7  REG1     ; To store the final note (an octave above the input)
 
 ;-------------- Initialize LFOs ------------------
 SKP	RUN,end_init
-WLDR	RMP0,2006,2048	; Ramp LFO for shift up 1 tone
-WLDR	RMP1,974,2048	; Ramp LFO for shift up 1 semi-tone
+WLDR RMP0,2006,2048 ; Ramp LFO for shift up 1 tone
+WLDR RMP1,974,2048  ; Ramp LFO for shift up 1 semi-tone
 end_init:
 ;-------------------------------------------------
 
 
 ;------ POT1 gives offset into delay lines -------
-OR 2337 << 8        ; ACC = Size of each delay line (top 16 bits)
+OR   2338 * 256     ; ACC = Size of each delay line (top 16 bits)
 MULX POT1
 WRAX offset,0.0
 ;-------------------------------------------------
@@ -87,32 +78,32 @@ RDAX ADCR,1.0
 ; The input is "Note0" (Tonic)
 
 ; Pitch-shift up 1 tone
-WRA	Note0,0.0
-CHO	RDA,RMP0,REG|COMPC,Note0
-CHO	RDA,RMP0,0,Note0+1
-WRA	tmp,0.0
-CHO	RDA,RMP0,RPTR2|COMPC,Note0
-CHO	RDA,RMP0,RPTR2,Note0+1
-CHO	SOF,RMP0,NA|COMPC,0
-CHO	RDA,RMP0,NA,tmp
+WRA  Note0,0.0
+CHO  RDA,RMP0,REG|COMPC,Note0
+CHO  RDA,RMP0,0,Note0+1
+WRA  tmp,0.0
+CHO  RDA,RMP0,RPTR2|COMPC,Note0
+CHO  RDA,RMP0,RPTR2,Note0+1
+CHO  SOF,RMP0,NA|COMPC,0
+CHO  RDA,RMP0,NA,tmp
 WRA  Line0,0.0      ; Write pitch-shifted note into Line0
-;OR Line0addr << 8  ; ACC = address of Line0 (which is 0, so leave out this line)
+;OR   Line0 * 256    ; ACC = address of Line0 (which is 0, so leave out this line)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
 ; Output of Line0 is "Note1" (Major 2nd)
 
 ; Pitch-shift up 1 tone
-WRA	Note1,0.0
-CHO	RDA,RMP0,REG|COMPC,Note1
-CHO	RDA,RMP0,0,Note1+1
-WRA	tmp,0.0
-CHO	RDA,RMP0,RPTR2|COMPC,Note1
-CHO	RDA,RMP0,RPTR2,Note1+1
-CHO	SOF,RMP0,NA|COMPC,0
-CHO	RDA,RMP0,NA,tmp
+WRA  Note1,0.0
+CHO  RDA,RMP0,REG|COMPC,Note1
+CHO  RDA,RMP0,0,Note1+1
+WRA  tmp,0.0
+CHO  RDA,RMP0,RPTR2|COMPC,Note1
+CHO  RDA,RMP0,RPTR2,Note1+1
+CHO  SOF,RMP0,NA|COMPC,0
+CHO  RDA,RMP0,NA,tmp
 WRA  Line1,0.0      ; Write pitch-shifted note into Line1
-OR   Line1addr << 8 ; ACC = address of Line1 (top 16 bits)
+OR   Line1 * 256    ; ACC = address of Line1 (top 16 bits)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
@@ -121,32 +112,32 @@ RMPA 1.0
 WRA Extra2,1.0      ; "Note2" will get an extra delay before output
 
 ; Pitch-shift up 1 semi-tone
-WRA	Note2,0.0
-CHO	RDA,RMP1,REG|COMPC,Note2
-CHO	RDA,RMP1,0,Note2+1
-WRA	tmp,0.0
-CHO	RDA,RMP1,RPTR2|COMPC,Note2
-CHO	RDA,RMP1,RPTR2,Note2+1
-CHO	SOF,RMP1,NA|COMPC,0
-CHO	RDA,RMP1,NA,tmp
+WRA  Note2,0.0
+CHO  RDA,RMP1,REG|COMPC,Note2
+CHO  RDA,RMP1,0,Note2+1
+WRA  tmp,0.0
+CHO  RDA,RMP1,RPTR2|COMPC,Note2
+CHO  RDA,RMP1,RPTR2,Note2+1
+CHO  SOF,RMP1,NA|COMPC,0
+CHO  RDA,RMP1,NA,tmp
 WRA  Line2,0.0      ; Write pitch shifted note into Line2
-OR   Line2addr << 8 ; ACC = address of Line2 (top 16 bits)
+OR   Line2 * 256    ; ACC = address of Line2 (top 16 bits)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
 ; Output of Line2 is "Note3" (Perfect 4th)
 
 ; Pitch-shift up 1 tone
-WRA	Note3,0.0
-CHO	RDA,RMP0,REG|COMPC,Note3
-CHO	RDA,RMP0,0,Note3+1
-WRA	tmp,0.0
-CHO	RDA,RMP0,RPTR2|COMPC,Note3
-CHO	RDA,RMP0,RPTR2,Note3+1
-CHO	SOF,RMP0,NA|COMPC,0
-CHO	RDA,RMP0,NA,tmp
+WRA  Note3,0.0
+CHO  RDA,RMP0,REG|COMPC,Note3
+CHO  RDA,RMP0,0,Note3+1
+WRA  tmp,0.0
+CHO  RDA,RMP0,RPTR2|COMPC,Note3
+CHO  RDA,RMP0,RPTR2,Note3+1
+CHO  SOF,RMP0,NA|COMPC,0
+CHO  RDA,RMP0,NA,tmp
 WRA  Line3,0.0      ; Write pitch shifted note into Line3
-OR   Line3addr << 8 ; ACC = address of Line3 (top 16 bits)
+OR   Line3 * 256    ; ACC = address of Line3 (top 16 bits)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
@@ -155,48 +146,48 @@ RMPA 1.0
 WRA Extra4,1.0      ; "Note4" will get an extra delay before output
 
 ; Pitch-shift up 1 tone
-WRA	Note4,0.0
-CHO	RDA,RMP0,REG|COMPC,Note4
-CHO	RDA,RMP0,0,Note4+1
-WRA	tmp,0.0
-CHO	RDA,RMP0,RPTR2|COMPC,Note4
-CHO	RDA,RMP0,RPTR2,Note4+1
-CHO	SOF,RMP0,NA|COMPC,0
-CHO	RDA,RMP0,NA,tmp
+WRA  Note4,0.0
+CHO  RDA,RMP0,REG|COMPC,Note4
+CHO  RDA,RMP0,0,Note4+1
+WRA  tmp,0.0
+CHO  RDA,RMP0,RPTR2|COMPC,Note4
+CHO  RDA,RMP0,RPTR2,Note4+1
+CHO  SOF,RMP0,NA|COMPC,0
+CHO  RDA,RMP0,NA,tmp
 WRA  Line4,0.0      ; Write pitch shifted note into Line4
-OR   Line4addr << 8 ; ACC = address of Line4 (top 16 bits)
+OR   Line4 * 256    ; ACC = address of Line4 (top 16 bits)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
 ; Output of Line4 is "Note5" (Major 6th)
 
 ; Pitch-shift up 1 tone
-WRA	Note5,0.0
-CHO	RDA,RMP0,REG|COMPC,Note5
-CHO	RDA,RMP0,0,Note5+1
-WRA	tmp,0.0
-CHO	RDA,RMP0,RPTR2|COMPC,Note5
-CHO	RDA,RMP0,RPTR2,Note5+1
-CHO	SOF,RMP0,NA|COMPC,0
-CHO	RDA,RMP0,NA,tmp
+WRA  Note5,0.0
+CHO  RDA,RMP0,REG|COMPC,Note5
+CHO  RDA,RMP0,0,Note5+1
+WRA  tmp,0.0
+CHO  RDA,RMP0,RPTR2|COMPC,Note5
+CHO  RDA,RMP0,RPTR2,Note5+1
+CHO  SOF,RMP0,NA|COMPC,0
+CHO  RDA,RMP0,NA,tmp
 WRA  Line5,0.0      ; Write pitch shifted note into Line5
-OR   Line5addr << 8 ; ACC = address of Line5 (top 16 bits)
+OR   Line5 * 256    ; ACC = address of Line5 (top 16 bits)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
 ; Output of Line5 is "Note6" (Major 7th)
 
 ; Pitch-shift up 1 semi-tone
-WRA	Note6,0.0
-CHO	RDA,RMP1,REG|COMPC,Note6
-CHO	RDA,RMP1,0,Note6+1
-WRA	tmp,0.0
-CHO	RDA,RMP1,RPTR2|COMPC,Note6
-CHO	RDA,RMP1,RPTR2,Note6+1
-CHO	SOF,RMP1,NA|COMPC,0
-CHO	RDA,RMP1,NA,tmp
+WRA  Note6,0.0
+CHO  RDA,RMP1,REG|COMPC,Note6
+CHO  RDA,RMP1,0,Note6+1
+WRA  tmp,0.0
+CHO  RDA,RMP1,RPTR2|COMPC,Note6
+CHO  RDA,RMP1,RPTR2,Note6+1
+CHO  SOF,RMP1,NA|COMPC,0
+CHO  RDA,RMP1,NA,tmp
 WRA  Line6,0.0      ; Write pitch shifted note into Line6
-OR   Line6addr << 8 ; ACC = address of Line6 (top 16 bits)
+OR   Line6 * 256    ; ACC = address of Line6 (top 16 bits)
 RDAX offset,1.0
 WRAX addr_ptr,0.0
 RMPA 1.0
