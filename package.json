@@ -20,7 +20,7 @@
     "vue-toasted": "^1.1.28"
   },
   "devDependencies": {
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "sass-loader": "^13.2.0",
     "sass-mq": "^5.0.1"
   }
