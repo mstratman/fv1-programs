@@ -2219,5 +2219,13 @@ and shimmer code with some changes such as:
     },
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=296",
   },
-
+  {
+    name: "Distortion Algorithms",
+    author: "Audiofab",
+    categories: ["Distortion"],
+    download: {
+      spn: { url: "https://audiofab.com/s/Audiofab_Distortion_Programs.zip" },
+    },
+    source_url: "https://audiofab.com/downloads",
+  }
 ]
