@@ -33,8 +33,6 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '~plugins/vue-sweetalert2.js', mode: 'client', ssr: false},
-    {src: '~plugins/vue-toasted.js', mode: 'client', ssr: false},
   ],
   /*
   ** Nuxt.js dev-modules

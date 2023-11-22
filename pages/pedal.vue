@@ -11,17 +11,17 @@
           <h2>Your "deserted island" pedal</h2>
           <h4>Loaded with your ideal tones</h4>
           <div>
-            <a href="images/pedal-platform/fv1-2.jpg" target="_blank">
-              <img class="u-max-full-width" src="images/pedal-platform/fv1-2.jpg" alt="FV-1 pedal platform"/>
+            <a href="/images/pedal-platform/fv1-2.jpg" target="_blank">
+              <img class="u-max-full-width" src="/images/pedal-platform/fv1-2.jpg" alt="FV-1 pedal platform"/>
             </a>
-            <a href="images/pedal-platform/fv1-3.jpg" target="_blank">
-              <img class="u-max-full-width" src="images/pedal-platform/fv1-3.jpg" alt="FV-1 pedal platform"/>
+            <a href="/images/pedal-platform/fv1-3.jpg" target="_blank">
+              <img class="u-max-full-width" src="/images/pedal-platform/fv1-3.jpg" alt="FV-1 pedal platform"/>
             </a>
           </div>
         </div>
         <div class="eight columns">
-          <a href="images/pedal-platform/fv1-1.jpg" target="_blank">
-            <img class="u-max-full-width" src="images/pedal-platform/fv1-1.jpg" alt="FV-1 pedal platform"/>
+          <a href="/images/pedal-platform/fv1-1.jpg" target="_blank">
+            <img class="u-max-full-width" src="/images/pedal-platform/fv1-1.jpg" alt="FV-1 pedal platform"/>
           </a>
         </div>
       </div>

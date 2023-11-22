@@ -110,7 +110,7 @@
             </span>
             &nbsp;
             <div v-if="p.commentary && p.commentary.length > 0" class="num-comments" @click="showMore(i_p)">
-              <font-awesome-icon :icon="['fas', 'comment']" class="icon" />
+              <font-awesome-icon :icon="['fas', 'comment']" />
               {{p.commentary.length}}
               comment<template v-if="p.commentary.length > 1">s</template>
             </div>
@@ -201,7 +201,7 @@ import GithubCorner from '../components/GithubCorner.vue'
 import all_programs from '../programs.js'
 
 import Multiselect from 'vue-multiselect'
-import "vue-multiselect/dist/vue-multiselect.min.css"
+import "vue-multiselect/dist/vue-multiselect.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
@@ -256,6 +256,8 @@ export default {
       applications.push({id: a, label: a})
     }
 
+    const swal = useSwal();
+
     return {
       all_programs,
 
@@ -269,6 +271,7 @@ export default {
       applications,
 
       hide_special_pcb: false,
+      swal,
     }
   },
 
@@ -276,6 +279,7 @@ export default {
     /* // Currenly showing you all programs by default, but not yet sure if that's a good idea.
      * this.selected_applications = this.applications.filter(a => a.id == undefined || a.id == "Guitar amplifier")
      */
+
   },
 
   watch: {
@@ -348,7 +352,7 @@ export default {
       if (program) {
         subject = subject + "%20-%20" + program
       }
-      this.$swal({
+      this.swal.fire({
         title: "Contributing",
         icon: "info",
         html: `<p>If you have any new programs to add, or recommend any changes or corrections, it would be greatly appreciated.</p><p>The easiest way to contribute is to simply <a href="mailto:stratman@gmail.com?subject=${subject}">email Mark, the maintainer of this project</a>.<p>If you are more technically savvy, you can also <a href="https://github.com/mstratman/fv1-programs" target="_blank">submit a pull request on the github project</a>.`,
@@ -360,12 +364,14 @@ export default {
     filterCategory: function(cat) {
       if (-1 == this.selected_categories.indexOf(cat)) {
         this.selected_categories.push(cat)
-        this.$toasted.show("Filtering by: " + cat, {
-          theme: "bubble",
-          position: "top-center",
-          duration : 5000,
-          fullWidth: true,
-          className: "blue-toasted-bubble",
+        this.swal.fire({
+          toast: true,
+          position: 'top-start',
+          showConfirmButton: false,
+          timer: 3000,
+          icon: 'success',
+          showCancelButton: false,
+          text: "Filtering by: " + cat,
         })
       }
     },
