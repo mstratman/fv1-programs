@@ -164,10 +164,10 @@
           </div>
 
           <div class="center-buttons download-buttons">
-            <a v-if="p.download.spn" class="button button-primary keep-case" target="_blank" :href="p.download.spn.url || `files/${p.download.spn.file}`">Download SpinASM</a>
-            <a v-if="p.download.spbk" class="button button-primary keep-case" target="_blank" :href="p.download.spbk.url || `files/${p.download.spbk.file}`">Download SpinCAD Bank</a>
-            <a v-if="p.download.spcd" class="button button-primary keep-case" target="_blank" :href="p.download.spcd.url || `files/${p.download.spcd.file}`">Download SpinCAD</a>
-            <a v-if="p.download.hex" class="button button-primary keep-case" target="_blank" :href="p.download.hex.url || `files/${p.download.hex.file}`">Download Hex</a>
+            <a v-if="p.download.spn" class="button button-primary keep-case" target="_blank" :href="p.download.spn.url || `/files/${p.download.spn.file}`" download>Download SpinASM</a>
+            <a v-if="p.download.spbk" class="button button-primary keep-case" target="_blank" :href="p.download.spbk.url || `/files/${p.download.spbk.file}`" download>Download SpinCAD Bank</a>
+            <a v-if="p.download.spcd" class="button button-primary keep-case" target="_blank" :href="p.download.spcd.url || `/files/${p.download.spcd.file}`" download>Download SpinCAD</a>
+            <a v-if="p.download.hex" class="button button-primary keep-case" target="_blank" :href="p.download.hex.url || `/files/${p.download.hex.file}`" download>Download Hex</a>
           </div>
         </div>
 
@@ -271,7 +271,7 @@ export default {
       applications,
 
       hide_special_pcb: false,
-      swal,
+      swal, // Member variable for sweetalert2 engine
     }
   },
 
@@ -396,7 +396,7 @@ export default {
 </script>
 
 <style lang="scss">
-  /* Be sure to also see assets/css/app.scss and static/css/ */
+  /* Be sure to also see assets/css/*.scss */
 
   /* vue-multiselect collapses the input, but its border is still visible. This is a workaround. */
   input.multiselect__input {
