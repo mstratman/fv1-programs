@@ -87,7 +87,7 @@ export default [
 Or rather, here are the notable files you're most likely to be looking for:
 
 * **programs.js** - the most important file, see the description of it above
-* **static/files/** - this directory contains all the downloadable .spn files referenced from the `entry.download.file` field in the `programs.js`
+* **public/files/** - this directory contains all the downloadable .spn files referenced from the `entry.download.file` field in the `programs.js`
 * **pages/index.vue** - the main page
 * **app.html** - global site template
 * **assets/css/app.scss** - global styles, useful on any page
@@ -97,24 +97,13 @@ Or rather, here are the notable files you're most likely to be looking for:
 
 ``` bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:3000
-npm run dev
+yarn dev -o --host 0
 
 # generate static project
-npm run generate
-```
-
-Upgrading:
-
-```bash
-npm install -g npm-check-updates # FIRST TIME ONLY
-ncu
-ncu -u
-npm install
-
-# Now TEST that everything still works correctly
+yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

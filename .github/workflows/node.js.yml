@@ -4,7 +4,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "revamp_to_latest_nuxt" ]
   pull_request:
     branches: [ "master" ]
 
@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.9.0]
+        node-version: [18.14.2]
 
     steps:
     - uses: actions/checkout@v3
@@ -24,4 +24,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run generate
+    - run: yarn install
+    - run: yarn generate
