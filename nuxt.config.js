@@ -27,7 +27,9 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/app.scss'
+    '@/assets/css/app.scss',
+    '@/assets/css/normalize.css',
+    '@/assets/css/skeleton.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -51,6 +53,11 @@ export default {
     html: {
       minify: { removeRedundantAttributes: false },
     },
+    transpile: [
+      '@fortawesome/vue-fontawesome',
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/free-solid-svg-icons',
+    ],
     /*
     ** You can extend webpack config here
     */
