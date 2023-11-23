@@ -26,3 +26,8 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - run: yarn generate
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: static-site-files
+        path: .output/
