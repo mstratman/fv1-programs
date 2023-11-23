@@ -37,7 +37,7 @@ export default [
     author_url: "mailto:blah@example.com", // Or a regular web link
     categories: ["Flanger", "Reverb"], // Required, at least 1
     download: { // Required
-      spn: { // or "spbk" or "spcd"
+      spn: { // or "spbk", "spcd", "hex", or "zip"
         // Either file or url. You don't need both.
         file: "flange_verb.spn",
       }
