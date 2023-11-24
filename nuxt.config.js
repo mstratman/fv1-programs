@@ -1,9 +1,15 @@
 let isDev = process.env.NODE_ENV !== 'production'
+const path = require('path')
 
 export default {
   mode: 'universal',
-  generate: {
-    dir: 'docs',
+  nitro: {
+    output: {
+      publicDir: path.join(__dirname, "docs/")
+    }
+  },
+  app: {
+    baseURL: '/fv1-programs/'
   },
   /*
   ** Headers of the page
