@@ -90,3 +90,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# static site output files
+.output

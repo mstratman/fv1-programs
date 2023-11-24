@@ -10,14 +10,14 @@ $mq-static-breakpoint: desktop;
 /*
  $mq-show-breakpoints: (mobile, largemobile, tablet, desktop, wide);
  */
-@import '~sass-mq';
+@import 'sass-mq';
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700&display=swap');
 
 html {
   font-family: "Poppins", sans-serif;
 
-  background: url(../../static/images/bg.jpg) no-repeat center center fixed;
+  background: url(/images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

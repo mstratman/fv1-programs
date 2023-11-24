@@ -16,7 +16,7 @@
       </div>
 
       <h2>Circuit / PCB</h2>
-      <p>Unless otherwise noted, all of these programs are assumed to work on the <a target="_blank" href="images/fv1-typical-application.png">"typical application"</a> circuit from the <a target="_blank" href="http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf">FV-1 datasheet</a>, and should also run fine on either the <strong><a target="_blank" href="https://github.com/mstratman/fv1-pedal-platform"><strong>Mimir's Well:</strong> FV-1 platform pedal</a></strong>, or the <a target="_blank" href="https://www.pedalpcb.com/product/arachnid/">Arachnid board from PedalPCB</a>.</p>
+      <p>Unless otherwise noted, all of these programs are assumed to work on the <a target="_blank" href="images/fv1-typical-application.png">"typical application"</a> circuit from the <a target="_blank" href="http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf">FV-1 datasheet</a>, and should also run fine on the <strong><a target="_blank" href="https://github.com/mstratman/fv1-pedal-platform">Mimir's Well: FV-1 platform pedal</a></strong>, the <a target="_blank" href="https://audiofab.com/products/easy-spin">Easy Spin pedal from Audiofab</a>, or the <a target="_blank" href="https://www.pedalpcb.com/product/arachnid/">Arachnid board from PedalPCB</a>.</p>
       <p>You can also <a href="https://shop.mas-effects.com/collections/diy/products/custom-fv-1-eeprom" target="_blank">get pre-programmed EEPROMs here</a>.</p>
       <!--
       <div class="center-buttons">
@@ -110,7 +110,7 @@
             </span>
             &nbsp;
             <div v-if="p.commentary && p.commentary.length > 0" class="num-comments" @click="showMore(i_p)">
-              <font-awesome-icon :icon="['fas', 'comment']" class="icon" />
+              <font-awesome-icon :icon="['fas', 'comment']" />
               {{p.commentary.length}}
               comment<template v-if="p.commentary.length > 1">s</template>
             </div>
@@ -164,10 +164,11 @@
           </div>
 
           <div class="center-buttons download-buttons">
-            <a v-if="p.download.spn" class="button button-primary keep-case" target="_blank" :href="p.download.spn.url || `files/${p.download.spn.file}`">Download SpinASM</a>
-            <a v-if="p.download.spbk" class="button button-primary keep-case" target="_blank" :href="p.download.spbk.url || `files/${p.download.spbk.file}`">Download SpinCAD Bank</a>
-            <a v-if="p.download.spcd" class="button button-primary keep-case" target="_blank" :href="p.download.spcd.url || `files/${p.download.spcd.file}`">Download SpinCAD</a>
-            <a v-if="p.download.hex" class="button button-primary keep-case" target="_blank" :href="p.download.hex.url || `files/${p.download.hex.file}`">Download Hex</a>
+            <a v-if="p.download.spn" class="button button-primary keep-case" target="_blank" :href="p.download.spn.url || `/files/${p.download.spn.file}`" download>Download SpinASM</a>
+            <a v-if="p.download.spbk" class="button button-primary keep-case" target="_blank" :href="p.download.spbk.url || `/files/${p.download.spbk.file}`" download>Download SpinCAD Bank</a>
+            <a v-if="p.download.spcd" class="button button-primary keep-case" target="_blank" :href="p.download.spcd.url || `/files/${p.download.spcd.file}`" download>Download SpinCAD</a>
+            <a v-if="p.download.hex" class="button button-primary keep-case" target="_blank" :href="p.download.hex.url || `/files/${p.download.hex.file}`" download>Download Hex</a>
+            <a v-if="p.download.zip" class="button button-primary keep-case" target="_blank" :href="p.download.zip.url || `/files/${p.download.zip.file}`" download>Download Zip</a>
           </div>
         </div>
 
@@ -201,7 +202,7 @@ import GithubCorner from '../components/GithubCorner.vue'
 import all_programs from '../programs.js'
 
 import Multiselect from 'vue-multiselect'
-import "vue-multiselect/dist/vue-multiselect.min.css"
+import "vue-multiselect/dist/vue-multiselect.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
@@ -256,6 +257,8 @@ export default {
       applications.push({id: a, label: a})
     }
 
+    const swal = useSwal();
+
     return {
       all_programs,
 
@@ -269,6 +272,7 @@ export default {
       applications,
 
       hide_special_pcb: false,
+      swal, // Member variable for sweetalert2 engine
     }
   },
 
@@ -276,6 +280,7 @@ export default {
     /* // Currenly showing you all programs by default, but not yet sure if that's a good idea.
      * this.selected_applications = this.applications.filter(a => a.id == undefined || a.id == "Guitar amplifier")
      */
+
   },
 
   watch: {
@@ -348,7 +353,7 @@ export default {
       if (program) {
         subject = subject + "%20-%20" + program
       }
-      this.$swal({
+      this.swal.fire({
         title: "Contributing",
         icon: "info",
         html: `<p>If you have any new programs to add, or recommend any changes or corrections, it would be greatly appreciated.</p><p>The easiest way to contribute is to simply <a href="mailto:stratman@gmail.com?subject=${subject}">email Mark, the maintainer of this project</a>.<p>If you are more technically savvy, you can also <a href="https://github.com/mstratman/fv1-programs" target="_blank">submit a pull request on the github project</a>.`,
@@ -360,12 +365,14 @@ export default {
     filterCategory: function(cat) {
       if (-1 == this.selected_categories.indexOf(cat)) {
         this.selected_categories.push(cat)
-        this.$toasted.show("Filtering by: " + cat, {
-          theme: "bubble",
-          position: "top-center",
-          duration : 5000,
-          fullWidth: true,
-          className: "blue-toasted-bubble",
+        this.swal.fire({
+          toast: true,
+          position: 'top-start',
+          showConfirmButton: false,
+          timer: 3000,
+          icon: 'success',
+          showCancelButton: false,
+          text: "Filtering by: " + cat,
         })
       }
     },
@@ -390,7 +397,7 @@ export default {
 </script>
 
 <style lang="scss">
-  /* Be sure to also see assets/css/app.scss and static/css/ */
+  /* Be sure to also see assets/css/*.scss */
 
   /* vue-multiselect collapses the input, but its border is still visible. This is a workaround. */
   input.multiselect__input {

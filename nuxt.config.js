@@ -1,9 +1,16 @@
 let isDev = process.env.NODE_ENV !== 'production'
+const path = require('path')
+
 
 export default {
   mode: 'universal',
-  generate: {
-    dir: 'docs',
+  nitro: {
+    output: {
+      publicDir: path.join(__dirname, "docs/")
+    }
+  },
+  app: {
+    baseURL: '/fv1-programs/'
   },
   /*
   ** Headers of the page
@@ -27,14 +34,14 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/app.scss'
+    '@/assets/css/app.scss',
+    '@/assets/css/normalize.css',
+    '@/assets/css/skeleton.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '~plugins/vue-sweetalert2.js', mode: 'client', ssr: false},
-    {src: '~plugins/vue-toasted.js', mode: 'client', ssr: false},
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,6 +60,11 @@ export default {
     html: {
       minify: { removeRedundantAttributes: false },
     },
+    transpile: [
+      '@fortawesome/vue-fontawesome',
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/free-solid-svg-icons',
+    ],
     /*
     ** You can extend webpack config here
     */
