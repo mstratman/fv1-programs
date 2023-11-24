@@ -7,10 +7,16 @@ export default {
   nitro: {
     output: {
       publicDir: path.join(__dirname, "docs/")
+    },
+    runtimeConfig: {
+      app: {
+        buildAssetsDir: '_nuxt'
+      }
     }
   },
   app: {
-    baseURL: '/fv1-programs/'
+    baseURL: '/fv1-programs/',
+    buildAssetsDir: '/_nuxt/'
   },
   /*
   ** Headers of the page
