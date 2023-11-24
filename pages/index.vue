@@ -16,7 +16,7 @@
       </div>
 
       <h2>Circuit / PCB</h2>
-      <p>Unless otherwise noted, all of these programs are assumed to work on the <a target="_blank" href="images/fv1-typical-application.png">"typical application"</a> circuit from the <a target="_blank" href="http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf">FV-1 datasheet</a>, and should also run fine on the <strong><a target="_blank" href="https://github.com/mstratman/fv1-pedal-platform"><strong>Mimir's Well:</strong> FV-1 platform pedal</a></strong>, the <a target="_blank" href="https://audiofab.com/products/easy-spin">Easy Spin pedal from Audiofab</a>, or the <a target="_blank" href="https://www.pedalpcb.com/product/arachnid/">Arachnid board from PedalPCB</a>.</p>
+      <p>Unless otherwise noted, all of these programs are assumed to work on the <a target="_blank" href="images/fv1-typical-application.png">"typical application"</a> circuit from the <a target="_blank" href="http://spinsemi.com/Products/datasheets/spn1001/FV-1.pdf">FV-1 datasheet</a>, and should also run fine on the <strong><a target="_blank" href="https://github.com/mstratman/fv1-pedal-platform">Mimir's Well: FV-1 platform pedal</a></strong>, the <a target="_blank" href="https://audiofab.com/products/easy-spin">Easy Spin pedal from Audiofab</a>, or the <a target="_blank" href="https://www.pedalpcb.com/product/arachnid/">Arachnid board from PedalPCB</a>.</p>
       <p>You can also <a href="https://shop.mas-effects.com/collections/diy/products/custom-fv-1-eeprom" target="_blank">get pre-programmed EEPROMs here</a>.</p>
       <!--
       <div class="center-buttons">
