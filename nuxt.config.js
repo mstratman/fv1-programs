@@ -10,12 +10,13 @@ export default {
     },
     runtimeConfig: {
       app: {
-        buildAssetsDir: '_nuxt'
+        buildAssetsDir: '_nuxt',
+        baseURL: '/fv1-programs'
       }
     }
   },
   app: {
-    baseURL: '/fv1-programs/',
+    baseURL: '/fv1-programs',
     buildAssetsDir: '/_nuxt/'
   },
   /*
