@@ -2238,7 +2238,7 @@ and shimmer code with some changes such as:
     author_url: "http://audiofab.com/",
     categories: ["Code snippet"],
     download: {
-      zip: { url: "audiofab.com/easy-spin-test-programs-v10.zip" },
+      zip: { url: "audiofab/easy-spin-test-programs-v10.zip" },
     },
     source_url: "https://audiofab.com/downloads",
   },
