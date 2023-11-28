@@ -2226,7 +2226,7 @@ and shimmer code with some changes such as:
     author_url: "http://audiofab.com/",
     categories: ["Distortion", "Chorus"],
     download: {
-      zip: { url: "audiofab/Audiofab_Distortion_Programs.zip" },
+      zip: { file: "audiofab/Audiofab_Distortion_Programs.zip" },
     },
     controls: ["Gain", "Tone", "Level"],
     source_url: "https://audiofab.com/downloads",
@@ -2238,7 +2238,7 @@ and shimmer code with some changes such as:
     author_url: "http://audiofab.com/",
     categories: ["Code snippet"],
     download: {
-      zip: { url: "audiofab/easy-spin-test-programs-v10.zip" },
+      zip: { file: "audiofab/easy-spin-test-programs-v10.zip" },
     },
     source_url: "https://audiofab.com/downloads",
   },
