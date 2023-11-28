@@ -2222,6 +2222,7 @@ and shimmer code with some changes such as:
   {
     name: "Distortion Algorithms",
     author: "Audiofab",
+    description: "A bank of 8 patches featuring various distortion algorithms in some cases combined with chorus and filtering. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.",
     author_url: "http://audiofab.com/",
     categories: ["Distortion", "Chorus"],
     download: {
@@ -2229,33 +2230,16 @@ and shimmer code with some changes such as:
     },
     controls: ["Gain", "Tone", "Level"],
     source_url: "https://audiofab.com/downloads",
-    commentary: [
-      {
-        written_by: "Audiofab",
-        comments: { text: `;A bank of 8 patches featuring various distortion
-;algorithms in some cases combined with chorus and filtering
-;Includes the SpinCAD file for you to play around with and a
-;JSON file for the Audiofab fv1_programmer utility`}
-      },
-    ],
   },
   {
     name: "Test Programs",
     author: "Audiofab",
+    description: "A bank of 8 patches featuring various test algorithms to ensure your FV-1-based pedal is working properly. Includes the SpinCAD file for you to play around with and, a JSON file for the Audiofab fv1_programmer utility and documentation.",
     author_url: "http://audiofab.com/",
     categories: ["Passthrough", "Output Zeroes", "Tremolo", "Delay", "Flanger", "Chorus", "Reverb"],
     download: {
       zip: { url: "https://audiofab.com/s/easy-spin-test-programs-v10.zip" },
     },
     source_url: "https://audiofab.com/downloads",
-    commentary: [
-      {
-        written_by: "Audiofab",
-        comments: { text: `;A bank of 8 patches featuring various test
-;algorithms to ensure your FV-1-based pedal is working properly.
-;Includes the SpinCAD file for you to play around with and, a
-;JSON file for the Audiofab fv1_programmer utility and documentation!`}
-      },
-    ],
   },
 ]
