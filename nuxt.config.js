@@ -4,6 +4,7 @@ const path = require('path')
 
 export default {
   mode: 'universal',
+  ssr: false,
   nitro: {
     output: {
       publicDir: path.join(__dirname, "docs/")
