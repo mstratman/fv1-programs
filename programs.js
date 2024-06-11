@@ -2232,10 +2232,7 @@ and shimmer code with some changes such as:
     commentary: [
       {
         written_by: "Audiofab",
-        comments: { text: `;A bank of 8 patches that use chorus alone,
-;pitch shifting and chorus, or pitch shifting and flanging.
-;Includes the SpinCAD file for you to play around with and a
-;JSON file for the Audiofab fv1_programmer utility.`}
+        comments: { text: `;A bank of 8 patches that use chorus alone, pitch shifting and chorus, or pitch shifting and flanging. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.`}
       },
     ],
   },
