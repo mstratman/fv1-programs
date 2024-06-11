@@ -2220,6 +2220,23 @@ and shimmer code with some changes such as:
     source_url: "http://www.spinsemi.com/forum/viewtopic.php?f=4&t=296",
   },
   {
+    name: "Pitch Shifters + Chorus/Flanging",
+    author: "Audiofab",
+    author_url: "http://audiofab.com/",
+    categories: ["Pitch", "Chorus", "Octave"],
+    download: {
+      zip: { url: "https://audiofab.com/s/20240604-Audiofab-Pitch-Shift-Chorus.zip" },
+    },
+    controls: ["Speed", "Depth/Level", "Feedback/Level"],
+    source_url: "https://audiofab.com/downloads",
+    commentary: [
+      {
+        written_by: "Audiofab",
+        comments: { text: `;A bank of 8 patches that use chorus alone, pitch shifting and chorus, or pitch shifting and flanging. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.`}
+      },
+    ],
+  },
+  {
     name: "Distortion Algorithms",
     author: "Audiofab",
     description: "A bank of 8 patches featuring various distortion algorithms in some cases combined with chorus and filtering. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.",
@@ -2240,6 +2257,7 @@ and shimmer code with some changes such as:
     download: {
       zip: { file: "audiofab/easy-spin-test-programs-v1.0.zip" },
     },
+    application: "Code snippet",
     source_url: "https://audiofab.com/downloads",
   },
 ]
