@@ -2222,6 +2222,7 @@ and shimmer code with some changes such as:
   {
     name: "Pitch Shifters + Chorus/Flanging",
     author: "Audiofab",
+    description: "A bank of 8 patches that use chorus alone, pitch shifting and chorus, or pitch shifting and flanging. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.",
     author_url: "http://audiofab.com/",
     categories: ["Pitch", "Chorus", "Octave"],
     download: {
@@ -2229,12 +2230,18 @@ and shimmer code with some changes such as:
     },
     controls: ["Speed", "Depth/Level", "Feedback/Level"],
     source_url: "https://audiofab.com/downloads",
-    commentary: [
-      {
-        written_by: "Audiofab",
-        comments: { text: `;A bank of 8 patches that use chorus alone, pitch shifting and chorus, or pitch shifting and flanging. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.`}
-      },
-    ],
+  },
+  {
+    name: "Reverb Algorithms",
+    author: "Audiofab",
+    description: "A bank of eight, classic reverbs for your Easy Spin pedal. Where applicable, the SpinCAD Designer source file is provided. All source code is included in the fv1-programmer JSON file so you can directly program your pedal with the Audiofab fv1_programmer utility.",
+    author_url: "http://audiofab.com/",
+    categories: ["Reverb", "Shimmer", "Delay"],
+    download: {
+      zip: { url: "https://audiofab.com/s/20240617-Reverbs.zip" },
+    },
+    controls: ["Delay/Tone", "Reverb Time", "Level/Mix"],
+    source_url: "https://audiofab.com/downloads",
   },
   {
     name: "Distortion Algorithms",
