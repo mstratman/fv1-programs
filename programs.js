@@ -2267,4 +2267,17 @@ and shimmer code with some changes such as:
     application: "Code snippet",
     source_url: "https://audiofab.com/downloads",
   },
+  {
+    name: "Tap Tempo Drum",
+    author: "Michele",
+    special_pcb: true,
+    description: "SpinCAD delay patch with tap tampo block. This connects to a drum delay patch, but can be applied to every delay patch. The tap tampo block works perfect.  The only problem is a little kind of 'swish' sound if you tap while playing. See the 'sourced from' URL below for the schematic.",
+    categories: ["Code snippet","Delay"],
+    download: {
+      spn: { file: "tap_drum.spn" },
+      spcd: { file: "tap_drum.spcd", }
+    },
+    application: "Code snippet",
+    source_url: "/images/tap_schematic.jpg"
+  },
 ]
