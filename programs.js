@@ -2238,7 +2238,7 @@ and shimmer code with some changes such as:
     author_url: "http://audiofab.com/",
     categories: ["Reverb", "Shimmer", "Delay"],
     download: {
-      zip: { url: "audiofab/20241216-Reverbs.zip" },
+      zip: { file: "audiofab/20241216-Reverbs.zip" },
     },
     controls: ["Delay/Tone", "Reverb Time", "Level/Mix"],
     source_url: "https://audiofab.com/downloads",
