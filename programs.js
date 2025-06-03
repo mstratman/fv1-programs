@@ -2222,11 +2222,11 @@ and shimmer code with some changes such as:
   {
     name: "Pitch Shifters + Chorus/Flanging",
     author: "Audiofab",
-    description: "A bank of 8 patches that use chorus alone, pitch shifting and chorus, or pitch shifting and flanging. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.",
+    description: "A bank of eight patches that use chorus alone, pitch shifting and chorus, or pitch shifting and flanging. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.",
     author_url: "http://audiofab.com/",
     categories: ["Pitch", "Chorus", "Octave"],
     download: {
-      zip: { url: "https://audiofab.com/s/20240604-Audiofab-Pitch-Shift-Chorus.zip" },
+      zip: { file: "audiofab/20240604-Audiofab-Pitch-Shift-Chorus.zip" },
     },
     controls: ["Speed", "Depth/Level", "Feedback/Level"],
     source_url: "https://audiofab.com/downloads",
@@ -2244,6 +2244,17 @@ and shimmer code with some changes such as:
     source_url: "https://audiofab.com/downloads",
   },
   {
+    name: "Delay Algorithms",
+    author: "Audiofab",
+    description: "A bank of eight varied delay algorithms for your Easy Spin pedal. These are (mostly) straightforward designs intended as starting points for experimentation and customization. Where applicable, the SpinCAD Designer source file is provided. All source code is included in the fv1-programmer JSON file so you can directly program your pedal with the Audiofab fv1_programmer utility.",
+    author_url: "http://audiofab.com/",
+    categories: ["Delay", "Chorus", "Reverb"],
+    download: {
+      zip: { file: "audiofab/20250523-Delays.zip" },
+    },
+    controls: ["Delay", "Repeats/Depth", "Level/Mix"],
+    source_url: "https://audiofab.com/downloads",
+  },  {
     name: "Distortion Algorithms",
     author: "Audiofab",
     description: "A bank of 8 patches featuring various distortion algorithms in some cases combined with chorus and filtering. Includes the SpinCAD file for you to play around with and a JSON file for the Audiofab fv1_programmer utility.",
